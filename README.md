@@ -40,4 +40,4 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
  -->
 ---
-Feito com 💖 by Sophia Pinto e Elisa.
+Feito com 💖 by Elisa e Sophia Pinto.
