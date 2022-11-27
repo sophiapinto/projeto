@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Header from '../../components/Header';
-import Select from '../../components/Select';
+import SignIn from '../../components/SignIn';
 
 function Home () {
   return (
     <div>
-      <Header />,
-      <Select />
+      <Header  />,
+      <SignIn />
     </div>
   );
 }

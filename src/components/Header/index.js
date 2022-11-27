@@ -8,10 +8,6 @@ class Header extends PureComponent {
         <div className="logo">
           <img src="logoImg.png" alt="Logo" />
         </div>
-
-        <div className="text">
-          <p>CALENDÁRIO VACINAL</p>
-        </div>
       </header>
     );
   }

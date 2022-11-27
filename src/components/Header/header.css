@@ -1,21 +1,5 @@
-.header-logo {
-    position: relative;
-    width: 147.27px;
-    height: 104.82px;
-}
-
-.header-text{
+.logo {
     position: absolute;
-    width: 408px;
-    height: 46px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    
-    color: #FFFEFE;
-    
+    width: 221.82px;
+    height: 333.33px; 
 }
