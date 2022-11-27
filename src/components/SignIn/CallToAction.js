@@ -6,13 +6,13 @@ class CallToAction extends PureComponent {
     return (
       <section className="block">
         <div className="wrapper">
-          <Link to="/cadastrar">
+          <Link to="/Cadastro">
             <h2 className="text-wrapper">Criar uma conta.</h2>
           </Link>
 
         </div>
         <div className="wrapper">
-          <Link to="/cadastrar">
+          <Link to="/EsqueceuSenha">
               <h2 className="text-wrapper">Esqueci senha</h2>
           </Link>
         </div>
