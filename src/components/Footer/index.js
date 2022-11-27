@@ -17,6 +17,7 @@ class Footer extends PureComponent {
             </a>
           </div>
         </div>
+        
       </footer>
     );
   }

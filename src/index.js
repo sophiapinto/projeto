@@ -5,14 +5,15 @@ import "./App.css";
 import Cadastro from './components/Cadastro';
 import SignIn from './components/SignIn';
 import EsqueceuSenha from './components/EsqueceuSenha';
+import Home from './pages/Home';
 
 ReactDOM.render(
 
   <BrowserRouter>
 
     <Switch>
-      {/* Rotas Ativadas*/}
-      <Route exact path= "/" component = {SignIn} />
+      <Route exact path= "/" component = {Home} />
+      <Route exact path= "/Login" component = {SignIn} />
       <Route exact path= "/Cadastro" component = {Cadastro} />
       <Route exact path= "/EsqueceuSenha" component = {EsqueceuSenha} />
 
