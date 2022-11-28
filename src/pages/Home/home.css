@@ -1,0 +1,18 @@
+h1 {
+    position: center;
+    left: 50px;
+    top: 50%;
+    width: auto;
+    max-height: 200%;
+    margin: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    
+    color: #FFFEFE;
+
+}

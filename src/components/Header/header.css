@@ -1,5 +1,17 @@
 .logo {
-    position: absolute;
-    width: 221.82px;
-    height: 333.33px; 
+    width: 60px;
+    height: 60px;
+    left: 200px;
+    top: 200px;
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-bottom: 20%;
+}
+
+img {
+    object-fit: contain;
+    left: 100%;
+    top: 100%;
+    width: auto;
+    max-height: 300%;
 }
