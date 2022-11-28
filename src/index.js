@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import "./App.css";
-import Cadastro from './components/Cadastro';
-import SignIn from './components/SignIn';
-import EsqueceuSenha from './components/EsqueceuSenha';
+
+import Cadastro from './pages/Cadastro';
+import SignIn from './pages/SignIn';
+import EsqueceuSenha from './pages/Esqueceu Senha';
 import Home from './pages/Home';
 
 ReactDOM.render(
