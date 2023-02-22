@@ -1,7 +1,6 @@
 import React from 'react';
 
 import SignIn from '../../components/SignIn';
-import Footer from '../../components/Footer'
 import Header from '../../components/Header';
 
 function Login () {
@@ -10,8 +9,6 @@ function Login () {
       <Header />
 
       <SignIn/>
-
-      <Footer/>
     </div>
   );
 }

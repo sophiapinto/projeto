@@ -8,17 +8,15 @@ class EsqueceuSenha extends PureComponent {
       <Fragment>
 
         <section className="block">
-            <form className="section-sign-in">
-              <div className="form-group">
-                <input type="text" className="form-input" placeholder="Insira o seu e-mail" />
-              </div>
-              <Link to="/Solicitado">
-                <button type="button" className="wrapper-01">
-                  Atualizar senha
-                </button>
-              </Link>
-
-            </form>
+          <div className="group">
+                <input type="text-group" className="input" placeholder="Insira o seu e-mail" />
+          </div>
+        
+          <div className="acess">
+            <Link to="/Solicitado">
+              <h2 className="text-acess">Atualizar senha</h2>
+            </Link>
+          </div>  
         </section>
 
       </Fragment>

@@ -1,6 +1,5 @@
 import React, { PureComponent, Fragment } from "react";
-import CallToAction from "./CallToAction";
-
+import { Link } from "react-router-dom";
 import "./signIn.css";
 
 class SignIn extends PureComponent {
@@ -9,20 +8,35 @@ class SignIn extends PureComponent {
       <Fragment>
 
         <section className="block">
-            <form className="section-sign-in">
-              <div className="form-group">
-                <input type="text" className="form-input" placeholder="Insira o seu e-mail" />
-              </div>
-              <div className="form-group">
-                <input type="text" className="form-input" placeholder="Insira sua senha" />
-              </div>
-              <button type="button" className="wrapper-01">
-                Acessar
-              </button>
-            </form>
-        </section>
+              
+            <div className="insert">
+              <input type="text" className="input" placeholder="Insira o seu e-mail" />
+            </div>
 
-        <CallToAction />
+            <div className="insert">
+              <input type="text" className="input" placeholder="Insira sua senha" />
+            </div>
+              
+            <div className="acess">
+              <Link to="/">
+                <h2 className="text-acess">Acessar</h2>
+              </Link>
+            </div>
+          
+          <div className="group">
+            <Link to="/Cadastro">
+              <h2 className="text-group">Criar uma conta</h2>
+            </Link>
+          </div>
+
+          <div className="group">
+            <Link to="/EsqueceuSenha">
+              <h2 className="text-group">Esqueci senha</h2>
+            </Link>
+          </div>
+          
+      </section>
+
       </Fragment>
 
 

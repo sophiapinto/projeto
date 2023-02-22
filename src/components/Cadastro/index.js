@@ -1,5 +1,6 @@
 import React, { PureComponent, Fragment } from "react";
 import "./cadastro.css";
+import { Link } from "react-router-dom";
 
 class Cadastro extends PureComponent {
   render() {
@@ -7,19 +8,21 @@ class Cadastro extends PureComponent {
       <Fragment>
 
         <section className="block">
-            <form className="section-sign-in">
-              <div className="form-group">
-                <input type="text" className="form-input" placeholder="Insira o seu e-mail" />
-              </div>
-              <div className="form-group">
-                <input type="text" className="form-input" placeholder="Insira sua senha" />
-              </div>
-              <button type="button" className="wrapper-01">
-                Criar Conta
-              </button>
-            </form>
-        </section>
+          <div className="group">
+            <input type="text-group" className="input" placeholder="Insira o seu e-mail" />
+          </div>
+              
+          <div className="group">
+            <input type="text-group" className="input" placeholder="Insira sua senha" />
+          </div>
 
+          <div className="acess">
+            <Link to="/">
+              <h2 className="text-acess">Criar conta</h2>
+            </Link>
+          </div>
+          
+        </section>
       </Fragment>
 
 
