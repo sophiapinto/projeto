@@ -8,7 +8,7 @@ function TelaCadastro () {
   return (
     <div>
       <Header />,
-      <EsqueceuSenha  />,
+      <EsqueceuSenha  />
       <Footer />
       
     </div>

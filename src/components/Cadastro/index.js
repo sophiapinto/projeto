@@ -8,16 +8,20 @@ class Cadastro extends PureComponent {
       <Fragment>
 
         <section className="block">
-          <div className="group">
+        <div className="group-05">
+            <input type="text-group" className="input" placeholder="Insira o seu nome" />
+          </div>
+
+          <div className="group-06">
             <input type="text-group" className="input" placeholder="Insira o seu e-mail" />
           </div>
               
-          <div className="group">
+          <div className="group-07">
             <input type="text-group" className="input" placeholder="Insira sua senha" />
           </div>
 
-          <div className="acess">
-            <Link to="/">
+          <div className="group-08">
+            <Link to="/CadastroRealizado">
               <h2 className="text-acess">Criar conta</h2>
             </Link>
           </div>

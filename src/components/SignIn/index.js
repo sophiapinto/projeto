@@ -13,17 +13,17 @@ class SignIn extends PureComponent {
               <input type="text" className="input" placeholder="Insira o seu e-mail" />
             </div>
 
-            <div className="insert">
+            <div className="insert-02">
               <input type="text" className="input" placeholder="Insira sua senha" />
             </div>
               
-            <div className="acess">
-              <Link to="/">
+            <div className="group-03">
+              <Link to="/Selecao">
                 <h2 className="text-acess">Acessar</h2>
               </Link>
             </div>
           
-          <div className="group">
+          <div className="group-01">
             <Link to="/Cadastro">
               <h2 className="text-group">Criar uma conta</h2>
             </Link>

@@ -1,13 +1,22 @@
 .block {
-  margin-top: 40%;
+  margin-top: 60%;
   align-items: center;
   display: grid;
+
 }
 
 .insert {
-  padding-bottom: 10px;
   position: center;
-  margin-left: 4%;
+  margin-left: 20%;
+  margin-top: -2%;
+  margin-bottom: 4%;
+}
+
+.insert-02 {
+  position: center;
+  margin-left: 20%;
+  margin-top: -2%;
+  margin-bottom: 4%;
 }
 
 .input {
@@ -19,7 +28,7 @@
 
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 20px;
   line-height: 48px;
   text-align: center;
@@ -27,15 +36,39 @@
   align-items: center;
 }
 
+.group-01 {
+  /*CRIAR CONTA*/
+  position: absolute;
+  background: #FFF2F2;
+  border-radius: 35px;
+  height: 30px;
+  width: 350px;
+  margin-top: 50%;
+  padding-bottom: 10px;
+  margin-left: 20%;
+}
+
 .group {
-  position: center;
+  /*ESQUECI SENHA*/
+  position: absolute;
   background: #FFF2F2;
   border-radius: 35px;
   height: 40px;
   width: 350px;
-  margin-top: 4%;
-  padding-bottom: 10px;
-  margin-left: 4%;
+  margin-top: 70%;
+  margin-left: 20%;
+}
+
+.group-03 {
+  /*ACESSE*/
+  position: absolute;
+  background: #8DD2CF8F;
+  border-radius: 35px;
+  height: 40px;
+  width: 350px;
+  margin-top: 34%;
+  margin-bottom: 10px;
+  margin-left: 20%;
 }
 
 .text-group{
@@ -45,35 +78,19 @@
 
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 800px;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
 
   color: #548B95;
-  margin-top: 2%;
-}
-
-.acess {
-  position: center;
-  background: #8DD2CF8F;
-  border-radius: 35px;
-  height: 50px;
-  width: 350px;
-  top: 10px;
-  padding-bottom: 10px;
-  margin-left: 4%;
-  margin-bottom: 5%;
 }
 
 .text-acess {
-  position: center;
-  text-align: center;
   color: #FFFEFE;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 25px;
   line-height: 36px;
-  margin-top: 2%;
 }

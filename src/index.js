@@ -7,6 +7,10 @@ import Cadastro from './pages/Cadastro';
 import SignIn from './pages/SignIn';
 import EsqueceuSenha from './pages/Esqueceu Senha';
 import Home from './pages/Home';
+import CadastroRealizado from './pages/CadastroRealizado';
+import SenhaSolicitada from './pages/SenhaSolicitada';
+import Selecao from './pages/Selecao';
+
 
 ReactDOM.render(
 
@@ -17,6 +21,9 @@ ReactDOM.render(
       <Route exact path= "/Login" component = {SignIn} />
       <Route exact path= "/Cadastro" component = {Cadastro} />
       <Route exact path= "/EsqueceuSenha" component = {EsqueceuSenha} />
+      <Route exact path= "/CadastroRealizado" component = {CadastroRealizado} />
+      <Route exact path= "/SenhaSolicitada" component = {SenhaSolicitada} />
+      <Route exact path= "/Selecao" component = {Selecao} />
 
     </Switch>
   </BrowserRouter>,

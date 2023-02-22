@@ -4,16 +4,21 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer'
 import { Link } from "react-router-dom";
 
-import "./home.css";
+import "./cadastrorealizado.css";
 
-function Home () {
+function CadastroRealizado () {
   return (
     <div>
+
       <Header />,
 
-      <div className="acess">
+      <span className="text">
+        Cadastro realizado com sucesso,<br/> realize seu login.
+      </span>,
+
+     <div className="group-18">
         <Link to="/Login">
-          <h2 className="text-acess">Acesse</h2>
+          <h2 className="text-group">Acesse</h2>
         </Link>
       </div>,
       
@@ -23,4 +28,4 @@ function Home () {
   );
 }
 
-export default Home;
+export default CadastroRealizado;
