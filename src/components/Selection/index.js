@@ -28,42 +28,42 @@ class Selection extends PureComponent {
 
             <section className="grid-container">
                 <div className= "grid-item">
-                    <Link to="/">
+                    <Link to="/Aprazamento">
                         <img src= {gestante} alt="Gestante" />
                         <span className="text-selection">GESTANTE</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
-                    <Link to="/">
+                    <Link to="/Aprazamento">
                         <img src= {idoso} alt="Idoso" />
                         <span className="text-selection">IDOSO</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
-                    <Link to="/">
+                    <Link to="/Aprazamento">
                         <img src= {adulto} alt="Adulto" />
                         <span className="text-selection">ADULTO</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
-                    <Link to="/">
+                    <Link to="/Aprazamento">
                         <img src= {adolescente} alt="Adolescente" />
                         <span className="text-selection">ADOLESCENTE</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
-                    <Link to="/">
+                    <Link to="/Aprazamento">
                         <img src= {criança} alt="Criança" />
                         <span className="text-selection">CRIANÇA</span>
                     </Link>
                 </div>
                 
                 <div className= "grid-item">
-                    <Link to="/">
+                    <Link to="/Aprazamento">
                         <img src= {aprazamento} alt="Aprazamento" />
                         <span className="text-selection">APRAZAMENTO</span>
                     </Link>
