@@ -23,56 +23,56 @@ class Selection extends PureComponent {
                     <img src={calendario} alt="Calendario"/>
                 </figure>
             </div>
-            {/*
+            
             
             <div className="selection-wrapper">
             <section className="grid-container">
                 <div className= "grid-item">
                     <Link to="/">
                         <img src= {gestante} alt="Gestante" />
-                        <h1>GESTANTE</h1>
+                        <span className="text-selection">GESTANTE</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
                     <Link to="/">
                         <img src= {idoso} alt="Idoso" />
-                        <h1>IDOSO</h1>
+                        <span className="text-selection">IDOSO</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
                     <Link to="/">
                         <img src= {adulto} alt="Adulto" />
-                        <h1>ADULTO</h1>
+                        <span className="text-selection">ADULTO</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
                     <Link to="/">
                         <img src= {adolescente} alt="Adolescente" />
-                        <h1>ADOLESCENTE</h1>
+                        <span className="text-selection">ADOLESCENTE</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item">
                     <Link to="/">
                         <img src= {criança} alt="Criança" />
-                        <h1>CRIANÇA</h1>
+                        <span className="text-selection">CRIANÇA</span>
                     </Link>
                 </div>
                 
                 <div className= "grid-item">
                     <Link to="/">
                         <img src= {aprazamento} alt="Aprazamento" />
-                        <h1>APRAZAMENTO</h1>
+                        <span className="text-selection">APRAZAMENTO</span>
                     </Link>
                 </div>
 
             </section>
             </div>
 
-            */}
+        
         </Fragment>
   
   
