@@ -17,15 +17,15 @@ class Selection extends PureComponent {
     render() {
       return (
         <Fragment>
-            
-            <div className="calendario-wrapper">
-                <figure class="figure-calendario">
-                    <img src={calendario} alt="Calendario"/>
-                </figure>
-            </div>
-            
-            
+
+                <div className="calendario-wrapper">
+                    <figure class="figure-calendario">
+                        <img src={calendario} alt="Calendario"/>
+                    </figure>
+                </div>
+
             <div className="selection-wrapper">
+
             <section className="grid-container">
                 <div className= "grid-item">
                     <Link to="/">
