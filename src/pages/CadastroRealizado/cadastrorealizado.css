@@ -1,4 +1,4 @@
-.text {
+.text-16 {
     position: absolute;
     color: #FFFEFE;
     font-family: 'Inter';
@@ -6,8 +6,8 @@
     font-weight: 800px;
     font-size: 25px;
     line-height: 36px;
-    top: -30%;
-    left: 0%;
+    top: 30%;
+    left: 20%;
     text-align: center;
 }
 
@@ -17,12 +17,12 @@
     border-radius: 35px;
     height: 10%;
     width: 60%;
-    top: 35%;
+    top: 50%;
     bottom: 10%;
     left: 20%;
 }
   
-.text-group{
+.text-group-16 {
     position: absolute;
     width: 336px;
     height: 47px;

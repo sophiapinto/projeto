@@ -7,10 +7,10 @@ class Header extends PureComponent {
   render() {
     return (
       <div>
-        <div className= "logo">
+        <div className= "logo-19">
           <img src= {logo} alt="Senhora Vacina" />
         </div>
-        <span className="text-span">CALENDÁRIO VACINAL</span>
+        <span className="text-span-19">CALENDÁRIO VACINAL</span>
       </div>
     );
   }

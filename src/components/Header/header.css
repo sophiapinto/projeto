@@ -1,19 +1,19 @@
-.logo {
+.logo-19 {
     position: absolute;
-    left: 2%;
+    left: 35%;
     right: 37.88%;
-    top: -2%;
+    top: 2%;
     bottom: 86.58%;
 
     height: 30%;
     width: 20%;
 }
 
-.text-span {
+.text-span-19 {
     position: absolute;
     left: 0%;
     right: 12.17%;
-    top: 30%;
+    top: 20%;
     bottom: 79.2%;
 
     font-family: 'Inter';

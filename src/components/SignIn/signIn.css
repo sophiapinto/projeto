@@ -1,11 +1,11 @@
-.logo {
+.logo-17 {
   position: absolute;
-  left: 20%;
+  left: 30%;
   right: 31.52%;
-  top: 10%;
+  top: 2%;
   bottom: 64.57%;
-  height: 5%;
-  width: 5%;
+  height: 25%;
+  width: 25%;
 }
 
 .block {
@@ -44,7 +44,7 @@
   bottom: -2.51%;
 }
 
-.input {
+.input-17 {
   background: #FFF2F2;
 
   font-family: 'Inter';
@@ -132,7 +132,7 @@
 
 }
 
-.text-group{
+.text-group-17 {
   position: absolute;
   top: 10%;
   left: 0%;
@@ -147,7 +147,7 @@
   color: #548B95;
 }
 
-.text-acess {
+.text-acess-17 {
   position: absolute;
   top: 10%;
   left: 35%;
@@ -157,4 +157,5 @@
   font-weight: 800;
   font-size: 25px;
   line-height: 36px;
+  top: -10%;
 }

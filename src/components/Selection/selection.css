@@ -1,12 +1,12 @@
-.logo {
+.logo-18 {
     position: absolute;
-    left: 10%;
+    left: 40%;
     right: 37.88%;
-    top: 2%;
+    top: 4%;
     bottom: 50%;
 
-    height: 5%;
-    width: 5%;
+    height: 22%;
+    width: 22%;
 }
 
 .img {
@@ -14,11 +14,11 @@
     max-width: 100%;    
 }
 
-.text-span {
+.text-span-18 {
     position: absolute;
-    left: 19.83%;
+    left: 10%;
     right: 5%;
-    top: -25%;
+    top: 25%;
     bottom: 80%;
 
     font-family: 'Inter';

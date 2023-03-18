@@ -18,10 +18,10 @@ class Selection extends PureComponent {
     render() {
       return (
         <Fragment>
-        <div className= "logo">
+        <div className= "logo-18">
           <img src= {logo} alt="Senhora Vacina" />
         </div>
-        <span className="text-span">CALENDÁRIO VACINAL</span>
+        <span className="text-span-18">CALENDÁRIO VACINAL</span>
 
             <div className="calendario-wrapper">
                <figure class="figure-calendario">

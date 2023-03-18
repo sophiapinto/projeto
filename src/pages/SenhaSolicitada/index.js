@@ -11,7 +11,7 @@ function SenhaSolicitada () {
 
       <Header />
 
-      <span className="text">
+      <span className="text-19">
         Atualização de senha solicitada com sucesso, verificar e-mail.
       </span>
       
