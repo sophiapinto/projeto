@@ -1,27 +1,28 @@
 .logo {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-top: 5%;
-    margin-left: 25%;
-    text-align: center;
+    left: 2%;
+    right: 37.88%;
+    top: -2%;
+    bottom: 86.58%;
+
+    height: 30%;
+    width: 20%;
 }
 
-img {
-    display: flex;
-    object-fit: contain;
-    max-height: 500%;
-    margin-left: 100%;
-}
+.text-span {
+    position: absolute;
+    left: 0%;
+    right: 12.17%;
+    top: 30%;
+    bottom: 79.2%;
 
-h1 {
-    display: flexbox;
-    width: 300px;
-    height: 30px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 25px;
-    line-height: 36px;    
+    line-height: 36px;
+    text-align: center;
+
     color: #FFFEFE;
+
 }

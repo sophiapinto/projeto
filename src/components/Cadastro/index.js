@@ -1,6 +1,8 @@
 import React, { PureComponent, Fragment } from "react";
 import "./cadastro.css";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
+
 
 class Cadastro extends PureComponent {
   render() {
@@ -8,7 +10,13 @@ class Cadastro extends PureComponent {
       <Fragment>
 
         <section className="block">
-        <div className="group-05">
+          <div className= "logo">
+            <img src= {logo} alt="Senhora Vacina" />
+          </div>
+        
+          <span className="text-span">CALENDÁRIO VACINAL</span>
+      
+          <div className="group-05">
             <input type="text-group" className="input" placeholder="Insira o seu nome" />
           </div>
 
