@@ -14,7 +14,7 @@
 
 .text-span {
   position: absolute;
-  left: 20%;
+  left: 30%;
   right: 18.72%;
   top: 67.72%;
   bottom: 28.74%;
@@ -30,6 +30,11 @@
 }
 .h2 .text-acess {
   position: absolute;
+  left: 35%;
+  right: 36%;
+  top: 77%;
+  bottom: 18.5%;
+
   color: #FFFEFE;
   font-family: 'Inter';
   font-style: normal;
