@@ -1,8 +1,18 @@
+.logo {
+  position: absolute;
+  left: 20%;
+  right: 31.52%;
+  top: 10%;
+  bottom: 64.57%;
+  height: 5%;
+  width: 5%;
+}
+
 .block {
   margin-top: 60%;
   align-items: center;
   display: grid;
-
+  
 }
 
 .insert {
@@ -13,7 +23,7 @@
   margin-bottom: 4%;
 */
   position: absolute;
-  left: 20%;
+  left: 10%;
   right: 0%;
   top: 40%;
   bottom: -2.51%;
@@ -28,7 +38,7 @@
   */
 
   position: absolute;
-  left: 20%;
+  left: 10%;
   right: 0%;
   top: 52%;
   bottom: -2.51%;
@@ -65,7 +75,7 @@
   margin-left: 20%;
   */
 
-  left: 20%;
+  left: 10%;
   right: 0%;
   top: 75%;
   bottom: -2.51%;
@@ -83,7 +93,7 @@
   margin-left: 20%;
   */
 
-  left: 20%;
+  left: 10%;
   right: 0%;
   top: 85%;
   bottom: -2.51%;
@@ -103,7 +113,7 @@
   margin-left: 20%;
   */
 
-  left: 20%;
+  left: 10%;
   right: 0%;
   top: 65%;
   bottom: -2.51%;

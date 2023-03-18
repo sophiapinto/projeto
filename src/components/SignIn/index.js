@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./signIn.css";
+import logo from "../../assets/images/logo.png";
 
 class SignIn extends PureComponent {
   render() {
@@ -8,7 +9,10 @@ class SignIn extends PureComponent {
       <Fragment>
 
         <section className="block">
-              
+            <div className= "logo">
+              <img src= {logo} alt="Senhora Vacina" />
+            </div>
+
             <div className="insert">
               <input type="text" className="input" placeholder="Insira o seu e-mail" />
             </div>
