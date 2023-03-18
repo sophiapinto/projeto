@@ -1,13 +1,13 @@
-import React, { PureComponent, Fragment } from "react";
+import React, { PureComponent } from "react";
+
 import "./cadastro.css";
+
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-
-
 class Cadastro extends PureComponent {
   render() {
     return (
-      <Fragment>
+      <div>
 
         <section className="block">
           <div className= "logo">
@@ -30,12 +30,12 @@ class Cadastro extends PureComponent {
 
           <div className="group-08">
             <Link to="/CadastroRealizado">
-              <h2 className="text-acess">Criar conta</h2>
+              <span className="text-acess">Criar conta</span>
             </Link>
           </div>
           
         </section>
-      </Fragment>
+      </div>
 
 
     );
