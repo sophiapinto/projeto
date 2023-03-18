@@ -6,17 +6,33 @@
 }
 
 .insert {
+  /*
   position: center;
   margin-left: 20%;
   margin-top: -2%;
   margin-bottom: 4%;
+*/
+  position: absolute;
+  left: 20%;
+  right: 0%;
+  top: 40%;
+  bottom: -2.51%;
 }
 
 .insert-02 {
+ /* 
   position: center;
   margin-left: 20%;
   margin-top: -2%;
   margin-bottom: 4%;
+  */
+
+  position: absolute;
+  left: 20%;
+  right: 0%;
+  top: 52%;
+  bottom: -2.51%;
+
 }
 
 .input {
@@ -41,11 +57,18 @@
   position: absolute;
   background: #FFF2F2;
   border-radius: 35px;
-  height: 30px;
+  height: 50px;
   width: 350px;
+  /*
   margin-top: 50%;
   padding-bottom: 10px;
   margin-left: 20%;
+  */
+
+  left: 20%;
+  right: 0%;
+  top: 75%;
+  bottom: -2.51%;
 }
 
 .group {
@@ -53,10 +76,18 @@
   position: absolute;
   background: #FFF2F2;
   border-radius: 35px;
-  height: 40px;
+  height: 50px;
   width: 350px;
+  /*
   margin-top: 70%;
   margin-left: 20%;
+  */
+
+  left: 20%;
+  right: 0%;
+  top: 85%;
+  bottom: -2.51%;
+
 }
 
 .group-03 {
@@ -64,11 +95,18 @@
   position: absolute;
   background: #8DD2CF8F;
   border-radius: 35px;
-  height: 40px;
+  height: 60px;
   width: 350px;
+  /*
   margin-top: 34%;
   margin-bottom: 10px;
   margin-left: 20%;
+  */
+
+  left: 20%;
+  right: 0%;
+  top: 65%;
+  bottom: -2.51%;
 }
 
 .text-group{
