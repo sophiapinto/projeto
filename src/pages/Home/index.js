@@ -10,14 +10,15 @@ function Home () {
   return (
     <div>
 
-        <div className= "logo">
+      <div className= "logo">
           <img src= {logo} alt="Senhora Vacina" />
-        </div>
-        <span className="text-span">CALENDÁRIO VACINAL</span>
+      </div>
+      
+      <span className="text-span">CALENDÁRIO VACINAL</span>
 
       <div className="acess">
         <Link to="/Login">
-          <h2 className="text-acess">Acesse</h2>
+          <span className="text-acess">Acesse</span>
         </Link>
       </div>
 

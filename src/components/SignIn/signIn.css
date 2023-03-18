@@ -9,7 +9,7 @@
 }
 
 .block {
-  margin-top: 60%;
+  margin-top: 50%;
   align-items: center;
   display: grid;
   
@@ -25,7 +25,7 @@
   position: absolute;
   left: 10%;
   right: 0%;
-  top: 40%;
+  top: 30%;
   bottom: -2.51%;
 }
 
@@ -40,12 +40,11 @@
   position: absolute;
   left: 10%;
   right: 0%;
-  top: 52%;
+  top: 43%;
   bottom: -2.51%;
 }
 
 .input {
-  position: center;
   background: #FFF2F2;
 
   font-family: 'Inter';
@@ -55,11 +54,9 @@
   line-height: 48px;
   text-align: center;
   color: #548B95;
-  
-  align-items: center;
 
-  height: 16%;
-  width: 55%;
+  height: 15%;
+  width: 77%;
   border-radius: 35px;
 
 }
@@ -79,11 +76,11 @@
 
   left: 10%;
   right: 0%;
-  top: 75%;
+  top: 66%;
   bottom: -2.51%;
 
   height: 10%;
-  width: 50%;
+  width: 70%;
   border-radius: 35px;
 
 }
@@ -102,11 +99,11 @@
 
   left: 10%;
   right: 0%;
-  top: 86%;
+  top: 78%;
   bottom: -2.51%;
   
   height: 10%;
-  width: 50%;
+  width: 70%;
   border-radius: 35px;
 
 }
@@ -126,11 +123,11 @@
 
   left: 10%;
   right: 0%;
-  top: 64%;
+  top: 55%;
   bottom: -2.51%;
 
   height: 10%;
-  width: 50%;
+  width: 70%;
   border-radius: 35px;
 
 }
@@ -138,7 +135,7 @@
 .text-group{
   position: absolute;
   top: 10%;
-  left: -15%;
+  left: 0%;
   right: 14%;
   font-family: 'Inter';
   font-style: normal;

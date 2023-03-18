@@ -2,21 +2,24 @@
     position: absolute;
     left: 10%;
     right: 37.88%;
-    top: -2%;
-    bottom: 86.58%;
+    top: 2%;
+    bottom: 50%;
+
+    height: 5%;
+    width: 5%;
 }
 
 .img {
-    height: 100px;
-    width: 100px;    
+    max-height: 100%;
+    max-width: 100%;    
 }
 
 .text-span {
     position: absolute;
     left: 19.83%;
-    right: 12.17%;
-    top: 28%;
-    bottom: 79.2%;
+    right: 5%;
+    top: -25%;
+    bottom: 80%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -34,6 +37,9 @@
     right: 100%;
     top: 60%;
     bottom: 33.33%;
+
+    width: 5px;
+    height: 25px;
 }
 
 .grid-item-02 {
@@ -42,6 +48,9 @@
     right: 120%;
     top: 60%;
     bottom: 33.12%;    
+    
+    width: 5px;
+    height: 25px;
 }
 
 .grid-item-03 {
@@ -50,6 +59,9 @@
     right: 140%;
     top: 60%;
     bottom: 32.8%;
+
+    width: 5px;
+    height: 22px;
 }
 
 .grid-item-04 {
@@ -58,6 +70,9 @@
     right: 120%;
     top: 90%;
     bottom: 5%;
+
+    width: 5px;
+    height: 25px;
 }
 
 .grid-item-05 {
@@ -66,6 +81,10 @@
     right: 120%;
     top: 90%;
     bottom: 5%;
+
+    width: 5px;
+    height: 25px;
+
 }
 
 .grid-item-06 {
@@ -74,14 +93,18 @@
     right: 130%;
     top: 90%;
     bottom: 5%;
+
+    width: 5px;
+    height: 25px;
+
 }
 
 .calendario-wrapper{
     position: absolute;
     left: 0%;
-    right: 0.01%;
-    top: 35%;
-    bottom: 51.79%;
+    right: 0%;
+    top: 38%;
+    bottom: 50%;
     
     background: #8bc0c4;
 
@@ -91,7 +114,7 @@
 
 .figure-calendario {
     position: absolute;
-    left: 20%;
+    left: 6%;
     right: 24.55%;
     top: -15%;
     bottom: 52.83%;
@@ -101,9 +124,9 @@
 
 .text-selection-01 {
     position: absolute;
-    left: 5%;
+    left: 10%;
     right: 90%;
-    top: 300%;
+    top: 500%;
     bottom: 28%;
 
     font-family: 'Inter';
@@ -119,7 +142,7 @@
     position: absolute;
     left: 70%;
     right: 50%;
-    top: 300%;
+    top: 500%;
     bottom: 28%;
 
     font-family: 'Inter';
@@ -135,7 +158,7 @@
     position: absolute;
     left: 71.5%;
     right: 13.65%;
-    top: 300%;
+    top: 570%;
     bottom: 28%;
 
     font-family: 'Inter';
@@ -151,7 +174,7 @@
     position: absolute;
     left: 2.5%;
     right: 72.5%;
-    top: 450%;
+    top: 500%;
     bottom: 8.1%;
 
     font-family: 'Inter';
@@ -167,7 +190,7 @@
     position: absolute;
     left: 38.79%;
     right: 42.12%;
-    top: 450%;
+    top: 500%;
     bottom: 6.71%;
 
     font-family: 'Inter';
@@ -181,9 +204,9 @@
 
 .text-selection-06 {
     position: absolute;
-    left: 67.27%;
-    right: 4.24%;
-    top: 450%;
+    left: -90%;
+    right: 6%;
+    top: 500%;
     bottom: 6.71%;
 
     font-family: 'Inter';

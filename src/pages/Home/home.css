@@ -28,12 +28,13 @@
 
   color: #FFFEFE;
 }
-.h2 .text-acess {
+
+.text-acess {
   position: absolute;
-  left: 35%;
-  right: 36%;
-  top: 77%;
-  bottom: 18.5%;
+  left: 30%;
+  right: 30%;
+  top: 10%;
+  bottom: 20%;
 
   color: #FFFEFE;
   font-family: 'Inter';
