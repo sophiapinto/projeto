@@ -2,8 +2,6 @@ import React from 'react';
 
 import logo from "../../assets/images/logo.png";
 
-//import Header from '../../components/Header';
-//import Footer from '../../components/Footer'
 import { Link } from "react-router-dom";
 
 import "./home.css";
@@ -14,8 +12,8 @@ function Home () {
 
         <div className= "logo">
           <img src= {logo} alt="Senhora Vacina" />
-          <h1>CALENDÁRIO VACINAL</h1>
         </div>
+        <span className="text-span">CALENDÁRIO VACINAL</span>
 
       <div className="acess">
         <Link to="/Login">
