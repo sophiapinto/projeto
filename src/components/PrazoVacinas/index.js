@@ -1,19 +1,25 @@
-import React, { PureComponent, Fragment } from "react";
-import calendario from "../../assets/images/calendario.svg";
-
+import React, { PureComponent } from "react";
 //import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 
+import './prazovacinas.css';
 class PrazoVacinas extends PureComponent {
     render() {
       return (
-        <Fragment>
+        <div>
+          <div className= "logo">
+            <img src= {logo} alt="Senhora Vacina" />
+          </div>
+          <span className="text-span">APRAZAMENTO DE VACINAS</span>
+          
+          <div className="wrapper">
+            <div className="wrapper-01">
+              <span className="text-s">NOME</span>
+            </div>
+            <div className="wrapper-02"></div>
+          </div>
 
-                <div className="calendario-wrapper">
-                    <figure class="figure-calendario">
-                        <img src={calendario} alt="Calendario"/>
-                    </figure>
-                </div>        
-        </Fragment>
+        </div>
   
   
       );
