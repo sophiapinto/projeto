@@ -42,15 +42,11 @@
   right: 0%;
   top: 52%;
   bottom: -2.51%;
-
 }
 
 .input {
   position: center;
   background: #FFF2F2;
-  border-radius: 35px;
-  height: 60px;
-  width: 350px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -59,7 +55,13 @@
   line-height: 48px;
   text-align: center;
   color: #548B95;
+  
   align-items: center;
+
+  height: 16%;
+  width: 55%;
+  border-radius: 35px;
+
 }
 
 .group-01 {
@@ -79,6 +81,11 @@
   right: 0%;
   top: 75%;
   bottom: -2.51%;
+
+  height: 10%;
+  width: 50%;
+  border-radius: 35px;
+
 }
 
 .group {
@@ -95,8 +102,12 @@
 
   left: 10%;
   right: 0%;
-  top: 85%;
+  top: 86%;
   bottom: -2.51%;
+  
+  height: 10%;
+  width: 50%;
+  border-radius: 35px;
 
 }
 
@@ -115,15 +126,20 @@
 
   left: 10%;
   right: 0%;
-  top: 65%;
+  top: 64%;
   bottom: -2.51%;
+
+  height: 10%;
+  width: 50%;
+  border-radius: 35px;
+
 }
 
 .text-group{
   position: absolute;
-  width: 336px;
-  height: 47px;
-
+  top: 10%;
+  left: -15%;
+  right: 14%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800px;
@@ -135,6 +151,9 @@
 }
 
 .text-acess {
+  position: absolute;
+  top: 10%;
+  left: 35%;
   color: #FFFEFE;
   font-family: 'Inter';
   font-style: normal;
