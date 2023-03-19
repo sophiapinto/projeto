@@ -26,6 +26,133 @@
     color: #FFFEFE;
 }
 
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pesquisa {
+    position: absolute;
+    left: 2.24%;
+    right: 80.67%;
+    top: 9.71%;
+    bottom: 54.37%;
+}
+
+
+.wrapper-pesquisa {
+    position: absolute;
+    left: 6.5%;
+    right: 0%;
+    top: 40%;
+    bottom: -31.67%;
+
+    background: #FFFFFF;
+    height: 60%;
+    width: 80%;
+    border-radius: 35px;
+}
+
+.pesquisa-faixa-etaria {
+    position: absolute;
+    left: 5.11%;
+    right: 4.95%;
+    top: 10%;
+    bottom: 54.85%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+
+    background: #74B3B5;
+    border-radius: 100px;
+
+    width: 92%;
+    height: 20%;
+}
+
+.pesquisa-vacina {
+    position: absolute;
+    left: 5.11%;
+    right: 4.95%;
+    top: 32%;
+    bottom: 54.85%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+
+    background: #74B3B5;
+    border-radius: 100px;
+
+    width: 92%;
+    height: 20%;
+}
+
+.pesquisa-data {
+    position: absolute;
+    left: 5.11%;
+    right: 4.95%;
+    top: 54%;
+    bottom: 14.56%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+
+    background: #74B3B5;
+    border-radius: 100px;
+
+    width: 90%;
+    height: 20%;
+
+    padding-right: 10px;
+}
+
+.pesquisa-button {
+    position: absolute;
+    left: 30%;
+    right: 0%;
+    top: 80%;
+    bottom: -2.51%;
+
+    background: #69a8bb;
+    border-radius: 35px;
+
+    height: 20%;
+    width: 40%;
+    
+    border-radius: 35px;
+
+}
+
+.text-pesquisa-button {
+    position: absolute;
+    top: 15%;
+    left: 26%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*
 .wrapper {
     position: absolute;
     left: 10%;
@@ -55,7 +182,7 @@
     background: #D9D9D9;
     border-radius: 10px;
 }
-
+*/
 .text-s {
     position: absolute;
     left: 2.9%;
