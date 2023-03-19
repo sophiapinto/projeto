@@ -1,0 +1,55 @@
+{
+    "faixaetaria": [
+        {
+            "id": 1,
+            "faixa": "Recém-nascido",
+            "vacinas":[
+                {
+                    "nomedavacina": "BCG",
+                    "quantdoses": 1,
+                    "prazo": 0
+                },
+                {
+                    "nomedavacina": "Hepatite B recombinante",
+                    "quantdoses": 1,
+                    "prazo": 0
+                }
+                {
+                    "nomedavacina": "Poliomielite 1,2,3 (VIP - inativada)",
+                    "quantdoses": 1,
+                    "prazo": 30
+                },
+                {
+                    "nomedavacina": "Poliomielite 1 e 3 (VOP - atenuada)",
+                    "quantdoses": 2,
+                    "prazo": 0
+                },
+                {
+                    "nomedavacina": "Hepatite B recombinante",
+                    "quantdoses": 1,
+                    "prazo": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "faixa": "Criança"
+        },
+        {
+            "id": 3,
+            "faixa": "Adolescente"
+        },
+        {
+            "id": 4,
+            "faixa": "Adulto"
+        },
+        {
+            "id": 5,
+            "faixa": "Idoso"
+        },
+        {
+            "id": 6,
+            "faixa": "Gestante"
+        }
+    ]
+  }
