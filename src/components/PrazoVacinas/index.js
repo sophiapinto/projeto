@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
 //import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ class PrazoVacinas extends PureComponent {
         */}
 
           <div className="wrapper-pesquisa">
-
+            <form className="Form-Prazo-Vacinas">  
             <div className="selection-faixaetaria">
               <select class="pesquisa-faixa-etaria" name="option">
                 <option value="" disabled selected>Selecione a faixa etária:</option>
@@ -50,18 +50,20 @@ class PrazoVacinas extends PureComponent {
             <div className="data">
               <input type="date" className="pesquisa-data" placeholder="Insira a data:" />
             </div>
-            
+            {/*
             <Link to= "/">
             <div className="pesquisa-button">
               <span className="text-pesquisa-button">Pesquisar</span>
             </div>
             </Link>
+
+            */}
+
+            <input type="submit" class="pesquisa-button" onclick="Calcular();" value="Pesquisar" />
+            </form>
+
           </div>
-
-
-        </div>
-  
-  
+        </div>  
       );
     }
 }

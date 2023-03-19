@@ -135,8 +135,17 @@
     width: 40%;
     
     border-radius: 35px;
-
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
 }
+
+/*
 
 .text-pesquisa-button {
     position: absolute;
@@ -152,7 +161,7 @@
     color: #ffffff;
 }
 
-/*
+
 .wrapper {
     position: absolute;
     left: 10%;
