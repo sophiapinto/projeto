@@ -32,35 +32,35 @@ class Selection extends PureComponent {
             <div className="selection-wrapper">
 
                 <div className= "grid-item-01">
-                    <Link to="/Aprazamento">
+                    <Link to="/CadernetadeVacina">
                         <img src= {gestante} alt="Gestante" />
                         <span className="text-selection-01">GESTANTE</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item-02">
-                    <Link to="/Aprazamento">
+                    <Link to="/CadernetadeVacina">
                         <img src= {idoso} alt="Idoso" />
                         <span className="text-selection-02">IDOSO</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item-03">
-                    <Link to="/Aprazamento">
+                    <Link to="/CadernetadeVacina">
                         <img src= {adulto} alt="Adulto" />
                         <span className="text-selection-03">ADULTO</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item-04">
-                    <Link to="/Aprazamento">
+                    <Link to="/CadernetadeVacina">
                         <img src= {adolescente} alt="Adolescente" />
                         <span className="text-selection-04">ADOLESCENTE</span>
                     </Link>
                 </div>
 
                 <div className= "grid-item-05">
-                    <Link to="/Aprazamento">
+                    <Link to="/CadernetadeVacina">
                         <img src= {criança} alt="Criança" />
                         <span className="text-selection-05">CRIANÇA</span>
                     </Link>

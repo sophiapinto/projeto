@@ -11,7 +11,7 @@ import CadastroRealizado from './pages/CadastroRealizado';
 import SenhaSolicitada from './pages/SenhaSolicitada';
 import Selecao from './pages/Selecao';
 import Aprazamento from './pages/Aprazamento';
-
+import CadernetadeVacina from './pages/CadernetadeVacina';
 
 ReactDOM.render(
 
@@ -26,6 +26,7 @@ ReactDOM.render(
       <Route exact path= "/SenhaSolicitada" component = {SenhaSolicitada} />
       <Route exact path= "/Selecao" component = {Selecao} />
       <Route exact path= "/Aprazamento" component = {Aprazamento} />
+      <Route exact path= "/CadernetadeVacinas" component = {CadernetadeVacina} />
 
     </Switch>
   </BrowserRouter>,
