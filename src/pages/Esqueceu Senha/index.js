@@ -7,7 +7,7 @@ import EsqueceuSenha from '../../components/EsqueceuSenha';
 function TelaCadastro () {
   return (
     <div>
-      <Header />,
+      <Header />
       <EsqueceuSenha  />
       <Footer />
       

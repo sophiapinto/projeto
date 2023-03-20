@@ -1,4 +1,4 @@
-import Caderneta from '../../components/Carousel';
+import Caderneta from '../../components/VacinaItem';
 
 function CadernetadeVacina () {
   return (
