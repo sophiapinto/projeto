@@ -26,7 +26,7 @@ ReactDOM.render(
       <Route exact path= "/SenhaSolicitada" component = {SenhaSolicitada} />
       <Route exact path= "/Selecao" component = {Selecao} />
       <Route exact path= "/Aprazamento" component = {Aprazamento} />
-      <Route exact path= "/CadernetadeVacinas" component = {CadernetadeVacina} />
+      <Route exact path= "/CadernetadeVacina" component = {CadernetadeVacina} />
 
     </Switch>
   </BrowserRouter>,

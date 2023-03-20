@@ -1,27 +1,40 @@
 .wrapper-vacina-item {
     position: absolute;
-    left: 0%;
+    left: 10%;
     right: 0%;
-    top: 0%;
+    top: 40%;
     bottom: 0%;
 
     background: #FFFFFF;
     border-radius: 20px;
+
+    width: 80%;
+    height: 45%;
 }
 
-.logo {
+.img {
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.logo-vacina {
     position: absolute;
     left: 8.87%;
     right: 74.63%;
     top: 4.15%;
     bottom: 74.95%;
+
+    height: 25%;
+    width: 25%;
 }
 
 .text-nome-vacina {
     position: absolute;
-    left: 23.89%;
+    left: 20%;
     right: 7.39%;
-    top: 5.64%;
+    top: 10%;
     bottom: 85.15%;
 
     font-family: 'Inter';
@@ -68,8 +81,8 @@
 
 .wrapper-quant-doses {
     position: absolute;
-    left: 78.33%;
-    right: 5.91%;
+    left: 65%;
+    right: 15%;
     top: 27.92%;
     bottom: 58.14%;
 

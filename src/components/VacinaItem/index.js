@@ -1,25 +1,25 @@
-import React, { Fragment, PureComponent} from "react";
+import React, { PureComponent} from "react";
 import "./vacinaitem.css";
+//import "../../../vacinas.json";
 
-import logo from "../../assets/images/logo.png";
-
+import vacinalogo from "../../assets/images/logo.png";
 class VacinaItem extends PureComponent {
     render() {
       return (
-        <Fragment>
-            <div className= "wrapper-vacina-item">
-                <img src= {logo} alt="logo" />
-                <span className="text-nome-vacina">Nome da Vacina</span>
-                <span className="text-quant-doses">Número de doses</span>
-                <span className="text-infomacao">Informações</span>
-                <div className="wrapper-quant-doses">
+                <div className= "wrapper-vacina-item">
+                    <div className="logo-vacina">
+                        <img src= {vacinalogo} alt="logo" />
+                    </div>
+                    <span className="text-nome-vacina">Nome da Vacina</span>
+                    <span className="text-quant-doses">Número de doses:</span>
+                    <span className="text-infomacao">Informações:</span>
+                    <div className="wrapper-quant-doses">
+                    </div>
+                    <div className="wrapper-informacoes">
+                    </div>
                 </div>
-                <div className="wrapper-informacoes">
-                </div>
-            </div>
-        </Fragment> 
     
-    );
-}
+        );
+    }
 }
 export default VacinaItem;
