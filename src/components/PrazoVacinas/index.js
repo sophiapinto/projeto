@@ -1,5 +1,7 @@
 import React, { PureComponent } from "react";
 //import { Link } from "react-router-dom";
+
+import dados from "../../vacinas.json";
 import logo from "../../assets/images/logo.png";
 
 //import { Link } from "react-router-dom";
@@ -16,18 +18,40 @@ class PrazoVacinas extends PureComponent {
             <img src= {logo} alt="Senhora Vacina" />
           </div>
           <span className="text-span">APRAZAMENTO DE VACINAS</span>
-          {/*
-          <div className="wrapper">
-            <div className="wrapper-01">
-              <span className="text-s">NOME</span>
-            </div>
-            <div className="wrapper-02"></div>
-          </div>
-        */}
-
+          
           <div className="wrapper-pesquisa">
             <form className="Form-Prazo-Vacinas">  
             <div className="selection-faixaetaria">
+              <select class="pesquisa-faixa-etaria" name="option">
+                <option value="" disabled selected>Selecione a faixa etária:</option>
+                {
+                  dados.categorias.map((v,i)=>
+                  <option value={i}>
+                    {v.titulo}
+                  </option>
+                )}
+              </select>
+            </div>
+
+            <div className="selection-vacina">
+                <select class="pesquisa-vacina" name="option">
+                  <option value="" disabled selected>Selecione a vacina:</option>
+                  {
+                    dados.categorias.map((v,i)=>
+                    <option value={i}>
+                      {v.vacina}
+                    </option>
+                  )}
+                </select>
+            </div>
+
+            <div className="data">
+                <input type="date" className="pesquisa-data" placeholder="Insira a data:" />
+            </div>
+
+            {/*
+
+                        <div className="selection-faixaetaria">
               <select class="pesquisa-faixa-etaria" name="option">
                 <option value="" disabled selected>Selecione a faixa etária:</option>
                 <option value="1">Recém-nascido</option>
@@ -38,6 +62,11 @@ class PrazoVacinas extends PureComponent {
                 <option value="6">Gestante</option>
               </select>
             </div>
+
+                  function ListaVacinas ((vacinas)){
+                    dados.map((titulo)=> <ListaVacinas vacinas= {titulo.vacinas}/>)
+                  }
+                  return ListaVacinas ();
 
             <div className="selection-vacina">
               <select class="pesquisa-vacina" name="option">
@@ -50,7 +79,7 @@ class PrazoVacinas extends PureComponent {
             <div className="data">
               <input type="date" className="pesquisa-data" placeholder="Insira a data:" />
             </div>
-            {/*
+
             <Link to= "/">
             <div className="pesquisa-button">
               <span className="text-pesquisa-button">Pesquisar</span>

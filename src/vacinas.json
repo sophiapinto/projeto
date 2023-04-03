@@ -2,7 +2,7 @@
     "categorias": [
         {
             "titulo": "Recém-nascido",
-            "vacinas": [
+            "vacinasrn": [
                 {
                     "id":"0",
                     "vacina":"BCG",
@@ -29,7 +29,7 @@
 
         {
             "titulo": "Criança",
-            "vacinas": [        
+            "vacinascrianca": [        
             {
                 "id":"2",
                 "vacina":"Poliomielite 1,2,3 (VIP - inativada)",
@@ -185,7 +185,7 @@
 
     {
         "titulo": "Adolescente",
-        "vacinas": [        
+        "vacinasadolescente": [        
             {
                 "id":"17",
                 "vacina":"Hepatite B recombinante",
@@ -257,7 +257,7 @@
 
     {
         "titulo": "Adulto",
-        "vacinas": [        
+        "vacinasadulto": [        
 
         {
             "id":"24",
@@ -333,7 +333,7 @@
 
 {
     "titulo": "Idoso",
-    "vacinas": [        
+    "vacinasidoso": [        
 
         {
             "id":"31","vacina":"Hepatite B recombinante","numerodedoses":"3","faixaetaria":"idoso",
@@ -405,7 +405,7 @@
 
 {
     "titulo": "Gestante",
-    "vacinas": [        
+    "vacinasgestante": [        
 
         {
             "id":"38",
