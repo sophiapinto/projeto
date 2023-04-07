@@ -2,6 +2,8 @@ import React, { PureComponent } from "react";
 //import { Link } from "react-router-dom";
 
 import dados from "../../vacinas.json";
+import dadosVAC from "../../dados.json";
+
 import logo from "../../assets/images/logo.png";
 
 //import { Link } from "react-router-dom";
@@ -34,15 +36,17 @@ class PrazoVacinas extends PureComponent {
             </div>
 
             <div className="selection-vacina">
+
                 <select class="pesquisa-vacina" name="option">
-                  <option value="" disabled selected>Selecione a vacina:</option>
-                  {
-                    dados.categorias.map((v,i)=>
-                    <option value={i}>
-                      {v.vacina}
-                    </option>
-                  )}
-                </select>
+                <option value="" disabled selected>Selecione a vacina:</option>
+                {
+                  dadosVAC.map((v,i)=>
+                  <option value={i}>
+                    {v.vacina}
+                  </option>
+                )}
+              </select>         
+
             </div>
 
             <div className="data">
