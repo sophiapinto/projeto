@@ -20,7 +20,7 @@ function VacinaGestante () {
                 <img src= {vacinalogo} alt="logo" />
             </div>
             <span className="text-nome-vacina-gestante">Difteria e Tétano (dT)</span>
-            <span className="text-quant-doses-gestante">Número de doses:</span>
+            <span className="text-quant-doses-gestante">Nº de doses:</span>
             <span className="text-infomacao-gestante">Informações:</span>
             
             <div className="wrapper-quant-doses-gestante">
@@ -38,7 +38,7 @@ function VacinaGestante () {
                 <img src= {vacinalogo} alt="logo" />
             </div>
             <span className="text-nome-vacina-gestante">Hepatite B recombinante</span>
-            <span className="text-quant-doses-gestante">Número de doses:</span>
+            <span className="text-quant-doses-gestante">Nº de doses:</span>
             <span className="text-infomacao-gestante">Informações:</span>
             
             <div className="wrapper-quant-doses-gestante">
@@ -56,7 +56,7 @@ function VacinaGestante () {
                 <img src= {vacinalogo} alt="logo" />
             </div>
             <span className="text-nome-vacina-gestante">Difteria, Tétano, Pertussis acelular</span>
-            <span className="text-quant-doses-gestante">Número de doses:</span>
+            <span className="text-quant-doses-gestante">Nº de doses:</span>
             <span className="text-infomacao-gestante">Informações:</span>
             
             <div className="wrapper-quant-doses-gestante">
