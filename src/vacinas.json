@@ -336,8 +336,13 @@
     "vacinasidoso": [        
 
         {
-            "id":"31","vacina":"Hepatite B recombinante","numerodedoses":"3","faixaetaria":"idoso",
-            "idaderecom_dose01":"0","idaderecom_dose02":"0","idaderecom_dose03":"0",
+            "id":"31",
+            "vacina":"Hepatite B recombinante",
+            "numerodedoses":"3",
+            "faixaetaria":"idoso",
+            "idaderecom_dose01":"0",
+            "idaderecom_dose02":"0",
+            "idaderecom_dose03":"0",
             "informacao":"Iniciar ou completar o esquema, de acordo com situaçao vacinal."
         },
         {
