@@ -15,6 +15,8 @@ import CadernetadeVacina from './pages/CadernetadeVacina';
 import VacinaGestante from './pages/VacinaGestante';
 import VacinaIdoso from './pages/VacinaIdoso';
 import VacinaAdulto from './pages/VacinaAdulto';
+import VacinaAdolescente from './pages/VacinaAdolescente';
+
 
 ReactDOM.render(
 
@@ -33,6 +35,7 @@ ReactDOM.render(
       <Route exact path= "/VacinaGestante" component = {VacinaGestante} />
       <Route exact path= "/VacinaIdoso" component = {VacinaIdoso} />
       <Route exact path= "/VacinaAdulto" component = {VacinaAdulto} />
+      <Route exact path= "/VacinaAdolescente" component = {VacinaAdolescente} />
 
     </Switch>
   </BrowserRouter>,
