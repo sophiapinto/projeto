@@ -17,7 +17,7 @@ function Home () {
       <span className="text-span">CALENDÁRIO VACINAL</span>
 
       <div className="acess">
-        <Link to="/Login">
+        <Link to="/Selecao">
           <span className="text-acess">Acesse</span>
         </Link>
       </div>

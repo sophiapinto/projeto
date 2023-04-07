@@ -19,7 +19,7 @@ function VacinaGestante () {
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina-gestante">Difteria e Tétano (dT)</span>
+            <span className="text-nome-vacina-gestante">Difteria e Tétano</span>
             <span className="text-quant-doses-gestante">Nº de doses:</span>
             <span className="text-infomacao-gestante">Informações:</span>
             
