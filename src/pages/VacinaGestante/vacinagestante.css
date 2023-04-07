@@ -32,7 +32,7 @@
 }
 
 
-.wrapper-vacina-item {
+.wrapper-vacina-item-gestante {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -64,24 +64,24 @@
     width: 25%;
 }
 
-.text-nome-vacina {
+.text-nome-vacina-gestante {
     position: absolute;
     left: 20%;
     right: 1%;
-    top: 6%;
+    top: 10%;
     bottom: 85.15%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 160%;
     line-height: 30px;
     text-align: center;
 
     color: #548B95;
 }
 
-.text-quant-doses {
+.text-quant-doses-gestante {
     position: absolute;
     left: 8.87%;
     right: 22.41%;
@@ -91,13 +91,13 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 150%;
     line-height: 36px;
 
     color: #548B95;
 }
 
-.text-infomacao {
+.text-infomacao-gestante {
     position: absolute;
     left: 9.11%;
     right: 22.17%;
@@ -107,16 +107,16 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 150%;
     line-height: 36px;
 
     color: #548B95;
 }
 
-.wrapper-quant-doses {
+.wrapper-quant-doses-gestante {
     position: absolute;
-    left: 70%;
-    right: 15%;
+    left: 60%;
+    right: 20%;
     top: 30%;
     bottom: 55%;
 
@@ -124,7 +124,7 @@
     border-radius: 10px;
 }
 
-.wrapper-informacoes {
+.wrapper-informacoes-gestante {
     position: absolute;
     left: 9.11%;
     right: 5.91%;
@@ -135,7 +135,7 @@
     border-radius: 10px;
 }
 
-.text-informacao-2 {
+.text-informacao-2-gestante {
     position: absolute;
     left: 4%;
     right: 2%;
@@ -145,14 +145,14 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 130%;
     line-height: 20px;
 
     color: #548B95;
 
 }
 
-.text-quant-doses-02 {
+.text-quant-doses-02-gestante {
     position: absolute;
     left: 40%;
     right: 22.41%;
@@ -162,13 +162,13 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 150%;
     line-height: 36px;
 
     color: #548B95;
 }
 
-.wrapper-vacina-item-02 {
+.wrapper-vacina-item-02-gestante {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -182,7 +182,7 @@
     height: 45%;
 }
 
-.wrapper-vacina-item-03 {
+.wrapper-vacina-item-03-gestante {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -194,5 +194,4 @@
 
     width: 80%;
     height: 45%;
-    
 }
