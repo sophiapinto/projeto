@@ -1,4 +1,4 @@
-.logo-gest-calenderio {
+.logo-idoso-calenderio {
     position: absolute;
     left: 40%;
     right: 37.88%;
@@ -14,7 +14,7 @@
     max-width: 100%;    
 }
 
-.text-gest-calenderio {
+.text-idoso-calenderio {
     position: absolute;
     left: 10%;
     right: 5%;
@@ -32,7 +32,7 @@
 }
 
 
-.wrapper-vacina-item {
+.wrapper-vacina-item-idoso {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -64,7 +64,7 @@
     width: 25%;
 }
 
-.text-nome-vacina {
+.text-nome-vacina-idoso {
     position: absolute;
     left: 20%;
     right: 1%;
@@ -74,14 +74,14 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 150%;
+    line-height: 100%;
     text-align: center;
 
     color: #548B95;
 }
 
-.text-quant-doses {
+.text-quant-doses-idoso {
     position: absolute;
     left: 8.87%;
     right: 22.41%;
@@ -91,13 +91,13 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 150%;
     line-height: 36px;
 
     color: #548B95;
 }
 
-.text-infomacao {
+.text-infomacao-idoso {
     position: absolute;
     left: 9.11%;
     right: 22.17%;
@@ -107,13 +107,13 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 150%;
     line-height: 36px;
 
     color: #548B95;
 }
 
-.wrapper-quant-doses {
+.wrapper-quant-doses-idoso {
     position: absolute;
     left: 70%;
     right: 15%;
@@ -124,18 +124,18 @@
     border-radius: 10px;
 }
 
-.wrapper-informacoes {
+.wrapper-informacoes-idoso {
     position: absolute;
     left: 8%;
     right: 5%;
     top: 55%;
-    bottom: 2%;
+    bottom: 4%;
     
     background: rgba(116, 179, 181, 0.3);
     border-radius: 10px;
 }
 
-.text-informacao-2 {
+.text-informacao-2-idoso {
     position: absolute;
     left: 4%;
     right: 2%;
@@ -145,14 +145,14 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 120%;
     line-height: 20px;
 
     color: #548B95;
 
 }
 
-.text-quant-doses-02 {
+.text-quant-doses-02-idoso {
     position: absolute;
     left: 40%;
     right: 22.41%;
@@ -168,7 +168,7 @@
     color: #548B95;
 }
 
-.wrapper-vacina-item-02 {
+.wrapper-vacina-item-02-idoso {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -182,7 +182,7 @@
     height: 45%;
 }
 
-.wrapper-vacina-item-03 {
+.wrapper-vacina-item-03-idoso {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -197,7 +197,7 @@
     
 }
 
-.wrapper-vacina-item-04 {
+.wrapper-vacina-item-04-idoso {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -213,7 +213,7 @@
 }
 
 
-.wrapper-vacina-item-05 {
+.wrapper-vacina-item-05-idoso {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -228,7 +228,7 @@
     
 }
 
-.wrapper-vacina-item-06 {
+.wrapper-vacina-item-06-idoso {
     position: absolute;
     left: 10%;
     right: 0%;
@@ -243,7 +243,7 @@
     
 }
 
-.wrapper-vacina-item-07 {
+.wrapper-vacina-item-07-idoso {
     position: absolute;
     left: 10%;
     right: 0%;

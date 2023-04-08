@@ -10,134 +10,134 @@ import idoso from "../../assets/images/idoso.svg";
 function VacinaIdoso () {
   return (
     <div>
-        <div className= "logo-gest-calenderio">
+        <div className= "logo-idoso-calenderio">
           <img src= {idoso} alt="Vacina Idoso" />
         </div>
-        <span className="text-gest-calenderio">CALENDÁRIO VACINAL DO IDOSO</span>
+        <span className="text-idoso-calenderio">CALENDÁRIO VACINAL DO IDOSO</span>
 
-        <div className= "wrapper-vacina-item">
+        <div className= "wrapper-vacina-item-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Difteria e Tétano (dT)</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Difteria e Tétano (dT)</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">3</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">3</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-            <span className="text-informacao-2">Iniciar ou completar o esquema, de acordo com a situação vacinal.</span>
+            <div className="wrapper-informacoes-idoso">
+            <span className="text-informacao-2-idoso">Iniciar ou completar o esquema, de acordo com a situação vacinal.</span>
             </div>
         </div>
 
-        <div className= "wrapper-vacina-item-02">
+        <div className= "wrapper-vacina-item-02-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Hepatite B recombinante</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Hepatite B recombinante</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">3</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">3</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-                <span className="text-informacao-2">Iniciar ou completar o esquema, de acordo com a situação vacinal.</span>
+            <div className="wrapper-informacoes-idoso">
+                <span className="text-informacao-2-idoso">Iniciar ou completar o esquema, de acordo com a situação vacinal.</span>
             </div>
         </div>
 
-        <div className= "wrapper-vacina-item-03">
+        <div className= "wrapper-vacina-item-03-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Febre Amarela (Atenuada)</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Febre Amarela (Atenuada)</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">1</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">1</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-                <span className="text-informacao-2">Iniciar ou completar o esquema, de acordo com situação vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade.</span>
+            <div className="wrapper-informacoes-idoso">
+                <span className="text-informacao-2-idoso">Iniciar ou completar o esquema, de acordo com situação vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade.</span>
             </div>
         </div>
 
-        <div className= "wrapper-vacina-item-04">
+        <div className= "wrapper-vacina-item-04-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Sarampo, Caxumba e Rubéola (SCR)</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Sarampo, Caxumba e Rubéola (SCR)</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">2</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">2</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-                <span className="text-informacao-2">Iniciar ou completar o esquema, de acordo com situação vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade.</span>
+            <div className="wrapper-informacoes-idoso">
+                <span className="text-informacao-2-idoso">Iniciar ou completar o esquema, de acordo com situação vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade.</span>
             </div>
         </div>
 
-        <div className= "wrapper-vacina-item-05">
+        <div className= "wrapper-vacina-item-05-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Papilomavírus humano (HPV)</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Papilomavírus humano (HPV)</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">2</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">2</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-                <span className="text-informacao-2">9 a 14 anos, para meninas; 11 a 14 anos para meninos.</span>
+            <div className="wrapper-informacoes-idoso">
+                <span className="text-informacao-2-idoso">9 a 14 anos, para meninas; 11 a 14 anos para meninos.</span>
             </div>
         </div>
 
-        <div className= "wrapper-vacina-item-06">
+        <div className= "wrapper-vacina-item-06-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Pneumocócica 23-valente (PPV 23)</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Pneumocócica 23-valente (PPV 23)</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">1</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">1</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-                <span className="text-informacao-2">A partir de 5 anos de idade para os povos indígenas, sem comprovação da vacina PCV 10.</span>
+            <div className="wrapper-informacoes-idoso">
+                <span className="text-informacao-2-idoso">A partir de 5 anos de idade para os povos indígenas, sem comprovação da vacina PCV 10.</span>
             </div>
         </div>
 
-        <div className= "wrapper-vacina-item-07">
+        <div className= "wrapper-vacina-item-07-idoso">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
             </div>
-            <span className="text-nome-vacina">Meningocócica ACWY (Conjugada)</span>
-            <span className="text-quant-doses">Número de doses:</span>
-            <span className="text-infomacao">Informações:</span>
+            <span className="text-nome-vacina-idoso">Meningocócica ACWY (Conjugada)</span>
+            <span className="text-quant-doses-idoso">Número de doses:</span>
+            <span className="text-infomacao-idoso">Informações:</span>
             
-            <div className="wrapper-quant-doses">
-                <span className="text-quant-doses-02">1</span>
+            <div className="wrapper-quant-doses-idoso">
+                <span className="text-quant-doses-02-idoso">1</span>
             </div>
 
             
-            <div className="wrapper-informacoes">
-                <span className="text-informacao-2">11 e 12 anos.</span>
+            <div className="wrapper-informacoes-idoso">
+                <span className="text-informacao-2-idoso">11 e 12 anos.</span>
             </div>
         </div>
 
