@@ -49,7 +49,7 @@ class PrazoVacinas extends PureComponent {
             <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
                     <option value="" disabled selected>Selecione a faixa etária:</option>
                     {
-                      dados.categorias.map((v,i)=> <option value={i}> {v.titulo} </option>
+                dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
                     )}
           </select>
           </label>
@@ -58,7 +58,7 @@ class PrazoVacinas extends PureComponent {
             <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
               <option value="" disabled selected>Selecione a vacina:</option>
               {
-                dadosVAC.map((v,i)=> <option value={i}> {v.vacina} </option>
+                dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
               )}
             </select>
           </label>
