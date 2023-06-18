@@ -1,25 +1,11 @@
 import React, { PureComponent } from "react";
 
 import dados from "../../vacinas.json";
+import dadosVAC from "../../dados.json";
 
 import logo from "../../assets/images/logo.png";
 
 import './prazovacinas.css';
-
-function selectvacina() {
-    
-  var faixaetaria = this.handleChange();
-  
-  if( faixaetaria === "vacinasrn") {
-
-      <select class="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-      <option value="" disabled selected>Selecione a faixa etária:</option>
-      {
-        dados.titulo.vacinasrn.map((v,i)=> <option value={i}> {v.vacinasrn} </option>
-      )}
-</select>
-}
-}
 class PrazoVacinas extends PureComponent {
 
   constructor(props) {
@@ -32,7 +18,7 @@ class PrazoVacinas extends PureComponent {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});          
+    this.setState({value: event.target.value});
   }
 
   handleDate(event) {
@@ -74,7 +60,6 @@ class PrazoVacinas extends PureComponent {
               {
                 dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
               )}
-*/}
             </select>
           </label>
 

@@ -1,84 +1,36 @@
-@media (min-width: 600px) {
-  
-  .acess {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 50%;
-    bottom: 30%;
+body {
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.acess {
+
+    position: relative;
+    top: 60%;
+    left: 40%;
+    transform: translateY(250%);
+    text-align: center;
+
     background: rgba(141, 210, 207, 0.56);
     border-radius: 30px;
 
-    height: 10%;
-    width: 20%;
-
-  }
-
-  .text-span-40 {
-    position: absolute;
-    left: 30%;
-    right: 18.72%;
-    top: 20%;
-    bottom: 28.74%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 36px;
-    text-align: center;
-
-    color: #FFFEFE;
-  }
-
-  .text-acess {
-    position: absolute;
-    left: 30%;
-    right: 30%;
-    top: 10%;
-    bottom: 20%;
+    border: 0;
+    height: 80px;
+    width: 200px;
 
     color: #FFFEFE;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800px;
-    font-size: 25px;
+    font-size: 160%;
     line-height: 36px;
-  }
-
-  .logo {
-    position: absolute;
-    left: 60%;
-    right: 10%;
-    top: 5%;
-    bottom: 36%;
-  }
-
-  .footer-wrapper {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 85%;
-    bottom: 0%;
-
-    background: #74B3B5;
-  }
-
 }
 
-@media (min-width: 300px) {
-  .acess {
-  position: absolute;
-  left: 30%;
-  right: 50%;
-  top: 50%;
-  bottom: 30%;
-  background: rgba(141, 210, 207, 0.56);
-  border-radius: 30px;
-
-  height: 10%;
-  width: 40%;
-
-}
 
 .text-span-40 {
   position:absolute;
@@ -97,21 +49,6 @@
   color: #FFFEFE;
 }
 
-.text-acess {
-  position: absolute;
-  left: 30%;
-  right: 30%;
-  top: 25%;
-  bottom: 20%;
-
-  color: #FFFEFE;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800px;
-  font-size: 160%;
-  line-height: 36px;
-}
-
 .logo {
   position: absolute;
   left: 25%;
@@ -126,8 +63,8 @@
   right: 0%;
   top: 85%;
   bottom: 0%;
-
+  width: 100%;
+  height: 100px;
   background: #74B3B5;
 }
 
-}
