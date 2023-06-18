@@ -60,20 +60,19 @@ class PrazoVacinas extends PureComponent {
 
         <form onSubmit={this.handleSubmit}>
           <label>
-            <select class="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-                    <option value="" disabled selected>Selecione a faixa etária:</option>
+            <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+                    <option value="" disabled>Selecione a faixa etária:</option>
                     {
-                      dados.categorias.map((v,i)=> <option value={i}> {v.titulo} </option>
+                dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
                     )}
           </select>
           </label>
 
           <label>
-          
-            <select class="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-              <option value={selectvacina} disabled selected>Selecione a vacina:</option>
-                {/*{
-                dados.map((v,i)=> <option value={i}> {v.vacina} </option>
+            <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+              <option value="" disabled>Selecione a vacina:</option>
+              {
+                dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
               )}
 */}
             </select>
@@ -85,7 +84,7 @@ class PrazoVacinas extends PureComponent {
 
           <label>
 
-            <input class="pesquisa-button" type="submit" value="Enviar" />
+            <input className="pesquisa-button" type="submit" value="Enviar" />
           </label>
         </form>
 

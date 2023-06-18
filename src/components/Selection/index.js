@@ -24,7 +24,7 @@ class Selection extends PureComponent {
         <span className="text-span-18">CALENDÁRIO VACINAL</span>
 
             <div className="calendario-wrapper">
-               <figure class="figure-calendario">
+               <figure className="figure-calendario">
                     <img src={calendario} alt="Calendario"/>
                </figure>
             </div>
