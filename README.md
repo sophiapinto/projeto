@@ -67,3 +67,18 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 <img src='/dj_notas/print-erro-no-console-1.png'>
 
 > Como a maioria dos erros, ele mesmo ensina como corrigir, no caso esse erro é causado pela atualização do react 17 para o react 18, onde o componente de renderização foi alterado, nesse link ensina a corrigir: [https://reactjs.org/link/switch-to-createroot](https://reactjs.org/link/switch-to-createroot)
+
+- Clicando no botão "Acessar", carrega o print abaixo, com novos erros:
+
+<img src="/dj_notas/print-erro-no-console-2.png">
+
+>.
+> Esse erro é bem comum, diz que foi usado na html o nome `class` e no react, para evitar problemas com a palavra reservada "class", é usado `className` para referencias as classes do CSS
+>
+> Para corrigir esse erro é necessario ir nos arquivos:
+>
+> - [/src/components/PrazoVacinas/index.js](/src/components/PrazoVacinas/index.js)
+> - [/src/components/Selection/index.js](/src/components/Selection/index.js)
+>
+> e substituir "`class`" por "`className`"
+<img src="/dj_notas/print-erro-no-console-3.png">
