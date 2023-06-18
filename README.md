@@ -219,7 +219,7 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 >
 > tanto é verdade, que com essa correção agora os erros sumiram, e o valor padrão desses input por `<select>` é os desejados
 
-### Agora vem a correção do erro de lógica na pagina Aprazamentos
+### Agora vem o erro de lógica na pagina Aprazamentos
 
 O erro se da nos inputs, com valores associados erroneamente
 
@@ -278,4 +278,9 @@ A teoria **sempre vai mudar em par, com o par da mesma posição** é verdade
 
 A data simplesmente foi limpa, apareceu aqueles erros no console, e o outro select se modificou para o par da mesma posição
 
-**Preciso dizer mais algo? ou já conseguiu formular uma teoria do porque isso ta acontecendo?**
+**Precisamos de mais testes? ou já conseguiu formular uma teoria do porque isso ta acontecendo?**
+
+O motivo e dicas de como corrigir está em
+[/dj_notas/resolucao_do_erro_de_logica.md](/dj_notas/resolucao_do_erro_de_logica.md)
+
+⚠⚠ Recomendo testar as soluções que você pensou antes de ir na resolução detalhada
