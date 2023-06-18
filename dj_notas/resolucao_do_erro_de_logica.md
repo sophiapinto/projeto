@@ -249,4 +249,4 @@ alert('A data da próxima vacina é: ' + this.state.values.data);
 
 ## Código alterado
 
-A compilação deste documento em um script se encontra na bifurcação "corrigindo erro de formulário"
+A compilação deste documento em um script se encontra na bifurcação "corrigindo erro de formulário" [Neste LINK](https://github.com/djedu28/aprazamento/blob/409b960a3f74fec2795d6d44e5081971982706cf/src/components/PrazoVacinas/index.js#L13)
