@@ -57,3 +57,13 @@ Dito isto, utilize apenas o `yarn`, como foi citado em ["Pré-requisitos"](#-pr�
 
 - deletar o arquivo [/package-lock.json](/package-lock.json)
 - Utilizar `yarn add nome-do-pacote-que-deseja-instalar` no lugar de `npm install nome-do-pacote...`
+
+### Sobre o código react
+
+Ao executar o servidor, e abrir o console no navegador é possível observar os erros que o projeto apresta naquela página, recomendo acessarem com frequência essa ferramenta e não ignorar os erros apresentados.
+
+- Abaixo o erro que aparece na pagina inicial, esse erro vai aparecer em todas as subpaginas, pois é um erro no nivel do arquivo [src/index.js](src/index.js)
+
+<img src='/dj_notas/print-erro-no-console-1.png'>
+
+> Como a maioria dos erros, ele mesmo ensina como corrigir, no caso esse erro é causado pela atualização do react 17 para o react 18, onde o componente de renderização foi alterado, nesse link ensina a corrigir: [https://reactjs.org/link/switch-to-createroot](https://reactjs.org/link/switch-to-createroot)
