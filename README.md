@@ -1,17 +1,16 @@
-# Aprazamento
+# Aprazamento: Ferramenta para verificação de aprazamento de vacinas
 
-<h3 align="center">
-  Ferramenta para verificação de aprazamento de vacinas.
-</h3>
+- Projeto inicializado com create-react-app.
+- Uso de PureComponents.
+- Rotas através do react-router-dom.
 
-<p align="center">Projeto inicializado com create-react-app.</p>
-<p align="center">Uso de PureComponents.</p>
-<p align="center">Rotas através do react-router-dom.</p>
+## Idealizadora
 
-## PROGRAMADORas
+- Elisa
+## PROGRAMADOR
 
 - [Sophia Pinto](https://github.com/sophiapinto)
-- [Elisa](https://github.com/sophiapinto)
+- [Eduardo Santos](https://github.com/djedu28)
 
 ## 🚀 Tecnologias
 
@@ -42,7 +41,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 Feito com 💖 by Elisa e Sophia Pinto.
 
-## Obervações importantes
+## Observações importantes
 
 ### Sobre o gerenciador de pacotes
 
