@@ -47,7 +47,7 @@ class PrazoVacinas extends PureComponent {
         <form onSubmit={this.handleSubmit}>
           <label>
             <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-                    <option value="" disabled selected>Selecione a faixa etária:</option>
+                    <option value="" disabled>Selecione a faixa etária:</option>
                     {
                 dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
                     )}
@@ -56,7 +56,7 @@ class PrazoVacinas extends PureComponent {
 
           <label>
             <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-              <option value="" disabled selected>Selecione a vacina:</option>
+              <option value="" disabled>Selecione a vacina:</option>
               {
                 dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
               )}

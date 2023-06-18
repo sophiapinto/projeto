@@ -87,16 +87,40 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 ![print-erro-no-console-4](/dj_notas/print-erro-no-console-4.png)
 
 > Encontramos 2 erros
-> - o primeiro é bem comum, 
-> `Warning: Each child in a list should have a unique "key" prop.
-`
-trazudindo fica:
-`Aviso: Cada filho em uma lista deve ter uma propriedade "chave" exclusiva.
-`
-> Diz que o react necessita de um id key para os componentes criados em lote, facil de resolver,
 >
+> - o primeiro é bem comum,
+>
+> ```Warning: Each child in a list should have a unique "key" prop.```
+>
+> Traduzindo, fica:
+>
+> ```Aviso: Cada filho em uma lista deve ter uma propriedade "chave" exclusiva.```
+>
+> Diz que o react necessita de um id key para os componentes criados em lote, fácil de resolver,
+>
+> ---
+>
+> - o segundo erro:
+>
+> ```Warning: Use the`defaultValue` or `value` props on <select> instead of setting `selected` on <option>.```
+>
+> traduzindo, fica:
+>
+> ```Aviso: Use os props `defaultValue` ou `value` em <select> em vez de definir `selected` em <option>.```
+>
+> ---
+> A tradução é bem auto explicativa, como disse antes, no próprio aleta do erro vem o que deve ser feito para corrigir
+>
+> <details>
+>   <summary>SPOILER</summary>
+>   Infelizmente o erro de verdade é de lógica🤦‍♂️, mesmo
+> </details>
 
-**Para corrigir o primeiro erro:**
+<!-- ---------------------- -->
+<!-- Correção do ERRO 4 -->
+<!-- ---------------------- -->
+
+#### Para corrigir o primeiro erro
 >
 > primeiro vamos no arquivo onde o erro está acontecendo, para localizar esse componente com erro:
 >
@@ -155,3 +179,39 @@ trazudindo fica:
 > ```js
 > 61 dadosVAC.map((v,i)=> <option key={i} value={i}> {v.vacina} </option>
 > ```
+
+<!-- ---------------------- -->
+<!-- correção do ERRO 5 -->
+<!-- ---------------------- -->
+#### Para corrigir o segundo erro
+>
+> Seguindo os passsos de rastreamento de erros, descrito [no erro anterior](#para-corrigir-o-primeiro-erro)
+>
+> chegamos no  componente **PrazoVacinas**, localizado em [src/components/PrazoVacinas/index.js](src/components/PrazoVacinas/index.js)
+>
+> Analisando o código, encontramos o uso de `selcted` em **duas linhas: 50 e 59**
+>
+> ```js
+> 49 <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+> 50 <option value="" disabled selected>Selecione a faixa etária:</option>
+> ```
+> ```js
+> 58 <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+> 59 <option value="" disabled selected>Selecione a vacina:</option>
+> ```
+>
+> Para sumir com o aleta de erro basta, deletar a tag `selected`, pois:
+> - Para o elemento `<select>` pai deste `<option>` 
+> ```js
+>  value={this.state.value}
+> ```
+> - e na linha 13 é definido que value = ''
+>
+> que é exatamente o valor do option que possuía o `selcted`
+> `<option value="" ...`
+>
+> logo, value em `<select>` já define este `<option>` como o default
+>
+> ![print-erro-no-console-5](dj_notas/print-erro-no-console-5.png)
+>
+> tanto é verdade, que com essa correção agora os erros sumiram, e o valor padrão desses input por `<select>` é os desejados
