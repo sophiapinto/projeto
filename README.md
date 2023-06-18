@@ -1,3 +1,5 @@
+# Aprazamento
+
 <h3 align="center">
   Ferramenta para verificação de aprazamento de vacinas.
 </h3>
@@ -6,12 +8,10 @@
 <p align="center">Uso de PureComponents.</p>
 <p align="center">Rotas através do react-router-dom.</p>
 
-
 ## PROGRAMADORas
 
 - [Sophia Pinto](https://github.com/sophiapinto)
 - [Elisa](https://github.com/sophiapinto)
-
 
 ## 🚀 Tecnologias
 
@@ -60,7 +60,7 @@ Dito isto, utilize apenas o `yarn`, como foi citado em ["Pré-requisitos"](#-pr�
 
 Ao executar o servidor, e abrir o console no navegador é possível observar os erros que o projeto apresta naquela página, recomendo acessarem com frequência essa ferramenta e não ignorar os erros apresentados.
 
-- Abaixo o erro que aparece na pagina inicial, esse erro vai aparecer em todas as subpaginas, pois é um erro no nivel do arquivo [src/index.js](src/index.js)
+- Abaixo o erro que aparece na pagina inicial, esse erro vai aparecer em todas as sub-paginas, pois é um erro no nível do arquivo [src/index.js](src/index.js)
 
 ![print-erro-no-console-1](/dj_notas/print-erro-no-console-1.png)
 
@@ -73,7 +73,7 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 >.
 > Esse erro é bem comum, diz que foi usado na html o nome `class` e no react, para evitar problemas com a palavra reservada "class", é usado `className` para referencias as classes do CSS
 >
-> Para corrigir esse erro é necessario ir nos arquivos:
+> Para corrigir esse erro é necessário ir nos arquivos:
 >
 > - [/src/components/PrazoVacinas/index.js](/src/components/PrazoVacinas/index.js)
 > - [/src/components/Selection/index.js](/src/components/Selection/index.js)
@@ -126,22 +126,21 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 >
 > 1. vamos nas rotatas, que no caso está localizado em [src/pages/Aprazamento/index.js](src/pages/Aprazamento/index.js)
 > 2. Identificamos qual componente da rota "/Aprazamento"
->
-> ```js
-> <Route exact path= "/Aprazamento" component = {Aprazamento} />
-> ```
->
-> No caso é a de mesmo nome "Aprazamento"
+  >
+  > ```js
+  > <Route exact path= "/Aprazamento" component = {Aprazamento} />
+  > ```
+  >
+  > No caso é a de mesmo nome "Aprazamento"
 > 3. vamos no inicio do codigo das rotas e identificamos de onde foi importado esse componetne
 >
 > ```js
 >  import Aprazamento from './pages/Aprazamento';
 >```
 >
-> Logo identificamos que a importação é da localizaçao: './pages/Aprazamento'
-> 4. então vamos para o arquivo da lozalizção: [src/pages/Aprazamento/index.js](src/pages/Aprazamento/index.js)
->
-> 5. Analizando o codigo:
+> Logo identificamos que a importação é da localização: './pages/Aprazamento'
+> 4. então vamos para o arquivo da localização: [src/pages/Aprazamento/index.js](src/pages/Aprazamento/index.js)
+> 5. Analisando o código:
 >
 > ```js
 > import PrazoVacinas from '../../> components/PrazoVacinas';
@@ -159,7 +158,7 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 >
 > Identificamos que o erro deve estar no componente `PrazoVacinas`, localizado em [src/components/PrazoVacinas/index.js](src/components/PrazoVacinas/index.js)
 >
-> Analizando o codigo por estruturas de repetição, encontramos o **.map** nas **linhas 52** e **61**
+> Analisando o código por estruturas de repetição, encontramos o **.map** nas **linhas 52** e **61**
 >
 > ```js
 > 52 dados.categorias.map((v,i)=> <option value={i}> {v.titulo} </option>
@@ -185,7 +184,7 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 <!-- ---------------------- -->
 #### Para corrigir o segundo erro
 >
-> Seguindo os passsos de rastreamento de erros, descrito [no erro anterior](#para-corrigir-o-primeiro-erro)
+> Seguindo os passos de rastreamento de erros, descrito [no erro anterior](#para-corrigir-o-primeiro-erro)
 >
 > chegamos no  componente **PrazoVacinas**, localizado em [src/components/PrazoVacinas/index.js](src/components/PrazoVacinas/index.js)
 >
@@ -251,7 +250,7 @@ Isso que você deve tá pensando, mas vamos testar essa teoria.
 
 A teoria **sempre vai mudar em par, com o par da mesma posição** é verdade
 
--  a menos que selecione no segundo `select` uma posição de numero maior que o tamanho da lista do primeiro `select`, neste caso o navegador buga e seleciona o primeiro `option` selecionavel na lista
+- a menos que selecione no segundo `select` uma posição de numero maior que o tamanho da lista do primeiro `select`, neste caso o navegador buga e seleciona o primeiro `option` selecionável na lista
   ![Alt text](/dj_notas/erros_no_formulario/image-5.png)
 
 - lembra do que eu falei de analisar o console?
@@ -259,7 +258,7 @@ A teoria **sempre vai mudar em par, com o par da mesma posição** é verdade
   ![Alt text](/dj_notas/erros_no_formulario/image-6.png)
 
 - no mínimo isso é intrigante.
-  Ele tá falando value "X" com x sendo exatamente a posição que estávamos selecionando nos inputs select. 
+  Ele tá falando value "X" com x sendo exatamente a posição que estávamos selecionando nos inputs select.
   ![Alt text](/dj_notas/erros_no_formulario/image-7.png)
   
   E ainda tem mais, ele diz que esse numero não está no formato de data, que é exatamente o tipo do terceiro input que não mexemos ainda
@@ -268,7 +267,7 @@ A teoria **sempre vai mudar em par, com o par da mesma posição** é verdade
 - E bora mexer nesse input data, e ver o que acontece
   ![Alt text](/dj_notas/erros_no_formulario/image-9.png)
 
-  Uma alteração sutil aconteceu, mas não teve erro no console. 
+  Uma alteração sutil aconteceu, mas não teve erro no console.
   ![Alt text](/dj_notas/erros_no_formulario/image-10.png)
   
   Os valores dos primeiros select foram setados para o primeiro valor selecionável. Assim como aconteceu com o primeiro select quando modificamos o segundo select para uma posição acima da quantidade disponível no primeiro
