@@ -40,13 +40,15 @@ class PrazoVacinas extends PureComponent {
     return (
       <div>
           <div className= "logo">
-            <img src= {logo} alt="Senhora Vacina" />
+            <figure class="logo-vac">
+              <img src= {logo} alt="Senhora Vacina" />
+            </figure>
+            <span className="text-span">APRAZAMENTO DE VACINAS</span>
           </div>
-          <span className="text-span">APRAZAMENTO DE VACINAS</span>
 
-        <form onSubmit={this.handleSubmit}>
+        <form class="form" onSubmit={this.handleSubmit}>
           <label>
-            <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+            <select class="sel-pesquisa pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
                     <option value="" disabled>Selecione a faixa etária:</option>
                     {
                 dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
@@ -55,7 +57,7 @@ class PrazoVacinas extends PureComponent {
           </label>
 
           <label>
-            <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+            <select class="sel-pesquisa pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
               <option value="" disabled>Selecione a vacina:</option>
               {
                 dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
@@ -64,13 +66,19 @@ class PrazoVacinas extends PureComponent {
           </label>
 
           <label>
-            <input type="date" className="pesquisa-data" value={this.state.value} onChange={this.handleDate}/>
+            <select class="sel-pesquisa pequisa-dose" type="checkbox">
+              <option value="">Selecione a quantidade de dose já tomadas:</option>
+              <option value="1">1 dose</option>
+              <option value="2">2 dose</option>
+              <option value="3">3 dose</option>
+            </select>
           </label>
 
           <label>
-
-            <input className="pesquisa-button" type="submit" value="Enviar" />
+            <input type="date" class="sel-pesquisa pesquisa-data" value={this.state.value} onChange={this.handleDate}/>
           </label>
+
+            <button class="pesquisa-button" type="submit" value="Enviar">Calcular</button>
         </form>
 
       </div>
