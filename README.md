@@ -6,7 +6,8 @@
 
 ## Idealizadora
 
-- Elisa
+[Elisa](https://github.com)
+
 ## PROGRAMADOR
 
 - [Sophia Pinto](https://github.com/sophiapinto)
