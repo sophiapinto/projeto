@@ -14,7 +14,7 @@ function Home () {
           <img src= {logo} alt="Senhora Vacina" />
       </div>
       
-      <span className="text-span">CALENDÁRIO VACINAL</span>
+      <span className="text-span-40">CALENDÁRIO VACINAL</span>
 
       <div className="acess">
         <Link to="/Selecao">
