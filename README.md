@@ -195,16 +195,20 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 > 49 <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
 > 50 <option value="" disabled selected>Selecione a faixa etária:</option>
 > ```
+>
 > ```js
 > 58 <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
 > 59 <option value="" disabled selected>Selecione a vacina:</option>
 > ```
 >
 > Para sumir com o aleta de erro basta, deletar a tag `selected`, pois:
-> - Para o elemento `<select>` pai deste `<option>` 
+>
+> - Para o elemento `<select>` pai deste `<option>`
+>
 > ```js
 >  value={this.state.value}
 > ```
+>
 > - e na linha 13 é definido que value = ''
 >
 > que é exatamente o valor do option que possuía o `selcted`
@@ -215,3 +219,64 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 > ![print-erro-no-console-5](dj_notas/print-erro-no-console-5.png)
 >
 > tanto é verdade, que com essa correção agora os erros sumiram, e o valor padrão desses input por `<select>` é os desejados
+
+### Agora vem a correção do erro de lógica na pagina Aprazamentos
+
+O erro se da nos inputs, com valores associados erroneamente
+
+#### Como reproduzir o erro
+
+1. Abra a pagina <http://localhost:3000/Aprazamento>
+  ![Alt text](/dj_notas/erros_no_formulario/image.png)
+
+2. Selecione qualquer coisa no primeiro select
+  ![Alt text](/dj_notas/erros_no_formulario/image-2.png)
+
+3. Repare que o valor no segundo input select foi alerdado
+  ![Alt text](/dj_notas/erros_no_formulario/image-1.png)
+
+4. modifique o valor no segundo select, e repare que o valor selecionado anteriormente no primeiro select foi alterado
+  ![Alt text](/dj_notas/erros_no_formulario/image-3.png)
+
+- Coincidentemente, os valores são alterados para os respectivos `options` em ordem de posição
+  ![Alt text](/dj_notas/erros_no_formulario/image-4.png)
+
+**Dedução:**
+
+`"sempre vai mudar em par, com o par da mesma posição"`
+
+Isso que você deve tá pensando, mas vamos testar essa teoria.
+
+#### Testes Extras
+
+A teoria **sempre vai mudar em par, com o par da mesma posição** é verdade
+
+-  a menos que selecione no segundo `select` uma posição de numero maior que o tamanho da lista do primeiro `select`, neste caso o navegador buga e seleciona o primeiro `option` selecionavel na lista
+  ![Alt text](/dj_notas/erros_no_formulario/image-5.png)
+
+- lembra do que eu falei de analisar o console?
+  Pois bem, durante toda essa alteração, observe o que apareceu no console:
+  ![Alt text](/dj_notas/erros_no_formulario/image-6.png)
+
+- no mínimo isso é intrigante.
+  Ele tá falando value "X" com x sendo exatamente a posição que estávamos selecionando nos inputs select. 
+  ![Alt text](/dj_notas/erros_no_formulario/image-7.png)
+  
+  E ainda tem mais, ele diz que esse numero não está no formato de data, que é exatamente o tipo do terceiro input que não mexemos ainda
+  ![Alt text](/dj_notas/erros_no_formulario/image-8.png)
+
+- E bora mexer nesse input data, e ver o que acontece
+  ![Alt text](/dj_notas/erros_no_formulario/image-9.png)
+
+  Uma alteração sutil aconteceu, mas não teve erro no console. 
+  ![Alt text](/dj_notas/erros_no_formulario/image-10.png)
+  
+  Os valores dos primeiros select foram setados para o primeiro valor selecionável. Assim como aconteceu com o primeiro select quando modificamos o segundo select para uma posição acima da quantidade disponível no primeiro
+
+- Ultimo teste: modificar um dos select e observar o que acontece com a data
+
+![Alt text](dj_notas/erros_no_formulario/image-11.png)
+
+A data simplesmente foi limpa, apareceu aqueles erros no console, e o outro select se modificou para o par da mesma posição
+
+**Preciso dizer mais algo? ou já conseguiu formular uma teoria do porque isso ta acontecendo?**
