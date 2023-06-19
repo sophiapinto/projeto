@@ -15,6 +15,7 @@ class PrazoVacinas extends PureComponent {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDate = this.handleDate.bind(this);
+    this.handleDose = this.handleDose.bind(this);
   }
 
   handleChange(event) {
@@ -69,6 +70,7 @@ class PrazoVacinas extends PureComponent {
       event.preventDefault();
     }
 */
+
     const intervaloEmDias = 21;
     const dataUltimaDose = new Date(this.state.value.slice()); // Substitua pela data real da última dose
 
