@@ -25,13 +25,57 @@ class PrazoVacinas extends PureComponent {
     this.setState({value: event.target.value});
   }
 
-  handleSubmit(event) {
-    // const result = this.state.value.slice();
-    //result[1] = "VacinaData";
-    //alert('A data da próxima vacina é: ' + result);
-    //this.setState({value: result});
+  handleDose(event) {
+    this.setState({value: event.target.value});
+  }
 
-    alert('A data da próxima vacina é: ' + this.state.value);
+  handleSubmit(event) {
+   
+/*
+    var numerodoses = this.handleDose();
+    const faixaetaria = dadosVAC.faixaetaria.map();
+
+    if(faixaetaria === "recem-nascido"){
+      alert("Dose única ao nascer");
+      event.preventDefault();
+
+
+    fetch('vacinas.json')
+    .then(response => response.json())
+    .then(vacinas => {
+      // Aqui você pode acessar os dados do arquivo JSON
+      var vacinas = ({
+        vacinasrn,
+        vacinascrianca,
+        vacinasadulto,
+        vacinasidos,
+        vacinasidoso
+      })
+    })
+    .catch(error => {
+      console.error('Erro ao carregar o arquivo JSON:', error);
+    });
+
+    vacinas.numerodedoses.forEach(numerodedoses => {
+      if (numerodedoses === '1') {
+        alert("Dose única ao nascer.");
+      }
+    });
+
+      const faixaetaria = this.handleChange.slice();
+    
+    if (faixaetaria==="recem-nascido"){
+      alert("Dose única ao nascer.");
+      event.preventDefault();
+    }
+*/
+    const intervaloEmDias = 21;
+    const dataUltimaDose = new Date(this.state.value.slice()); // Substitua pela data real da última dose
+
+    const dataProximaDose = new Date(dataUltimaDose);
+    dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
+
+    alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
     event.preventDefault();
   
   }
@@ -66,11 +110,11 @@ class PrazoVacinas extends PureComponent {
           </label>
 
           <label>
-            <select class="sel-pesquisa pequisa-dose" type="checkbox">
+            <select class="sel-pesquisa pequisa-dose" type="checkbox"value={this.state.value} onChange={this.handleDose}>
               <option value="">Selecione a quantidade de dose já tomadas:</option>
-              <option value="1">1 dose</option>
-              <option value="2">2 dose</option>
-              <option value="3">3 dose</option>
+              <option value="1">1 (uma) dose</option>
+              <option value="2">2 (duas) doses</option>
+              <option value="3">3 (três) doses</option>
             </select>
           </label>
 
