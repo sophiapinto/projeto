@@ -32,7 +32,7 @@ class PrazoVacinas extends PureComponent {
   }
 
   handleDose(event) {
-    this.setState({value: event.target.value});
+    this.setState({value: {dose: event.target.value}});
   }
 
   handleSubmit(event) {
@@ -68,23 +68,55 @@ class PrazoVacinas extends PureComponent {
       }
     });
 
-      const faixaetaria = this.handleChange.slice();
-    
-    if (faixaetaria==="recem-nascido"){
-      alert("Dose única ao nascer.");
-      event.preventDefault();
-    }
 */
 
-    const intervaloEmDias = 21;
-    const dataUltimaDose = new Date(this.state.value.slice()); // Substitua pela data real da última dose
+  fetch('vacinas.json')
+  .then(response => {
+    response.json()
+  })
 
-    const dataProximaDose = new Date(dataUltimaDose);
-    dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
-
-    alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
-    event.preventDefault();
+  .then(response => {
+    var titulo = [
+      "Recém-nascido",
+      "Adulto",
+      "Idoso",
+      "Criança",
+      "Adolescente",
+      "Gestante"];
   
+     var faixaetaria = ["vacinasrn",
+      "vacinascrianca",
+      "vacinasadulto",
+      "vacinasidoso",
+      "vacinasgestante"];
+  
+      var intervaloDose = [
+      
+      "idaderecom_dose01",
+      "idaderecom_dose02",
+      "idaderecom_dose03"];
+
+  }
+  )
+
+  var titulo = this.state.value.faixa.slice();
+
+  if (titulo = "Recém-nascido") {
+    alert("Dose única ao nascer.");
+    event.preventDefault();
+  }
+  
+  const intervaloEmDias = 21;
+  const dataUltimaDose = new Date(this.state.value.data.slice()); // Substitua pela data real da última dose
+
+  const dataProximaDose = new Date(dataUltimaDose);
+  dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
+
+  alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
+  event.preventDefault();
+  
+  
+
   }
 
   render() {
@@ -99,7 +131,7 @@ class PrazoVacinas extends PureComponent {
 
         <form class="form" onSubmit={this.handleSubmit}>
           <label>
-            <select class="sel-pesquisa pesquisa-faixa-etaria" type="checkbox" value={this.state.faixa} onChange={this.handleChangeFaixaEtaria}>
+            <select id="faixaet" class="sel-pesquisa pesquisa-faixa-etaria" type="checkbox" value={this.state.faixa} onChange={this.handleChangeFaixaEtaria}>
                     <option value="" disabled>Selecione a faixa etária:</option>
                     {
                 dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
@@ -110,6 +142,7 @@ class PrazoVacinas extends PureComponent {
           <label>
             <select class="sel-pesquisa pesquisa-vacina" type="checkbox" value={this.state.vacina} onChange={this.handleChangeVacina}>
               <option value="" disabled>Selecione a vacina:</option>
+              
               {
                 dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
               )}
@@ -121,8 +154,8 @@ class PrazoVacinas extends PureComponent {
           </label>
 
           <label>
-            <select class="sel-pesquisa pequisa-dose" type="checkbox"value={this.state.dose} onChange={this.handleDose}>
-              <option value="">Selecione a quantidade de dose já tomadas:</option>
+            <select id="quant-dose" class="sel-pesquisa pequisa-dose" type="checkbox" value={this.state.dose} onChange={this.handleDose}>
+              <option value="" disabled>Selecione a quantidade de dose já tomadas:</option>
               <option value="1">1 (uma) dose</option>
               <option value="2">2 (duas) doses</option>
               <option value="3">3 (três) doses</option>
