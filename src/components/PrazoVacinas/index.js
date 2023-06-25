@@ -36,39 +36,6 @@ class PrazoVacinas extends PureComponent {
   }
 
   handleSubmit(event) {
-   
-/*
-    var numerodoses = this.handleDose();
-    const faixaetaria = dadosVAC.faixaetaria.map();
-
-    if(faixaetaria === "recem-nascido"){
-      alert("Dose única ao nascer");
-      event.preventDefault();
-
-
-    fetch('vacinas.json')
-    .then(response => response.json())
-    .then(vacinas => {
-      // Aqui você pode acessar os dados do arquivo JSON
-      var vacinas = ({
-        vacinasrn,
-        vacinascrianca,
-        vacinasadulto,
-        vacinasidos,
-        vacinasidoso
-      })
-    })
-    .catch(error => {
-      console.error('Erro ao carregar o arquivo JSON:', error);
-    });
-
-    vacinas.numerodedoses.forEach(numerodedoses => {
-      if (numerodedoses === '1') {
-        alert("Dose única ao nascer.");
-      }
-    });
-
-*/
 
   fetch('vacinas.json')
   .then(response => {
@@ -106,6 +73,7 @@ class PrazoVacinas extends PureComponent {
     event.preventDefault();
   }
   
+  else {
   const intervaloEmDias = 21;
   const dataUltimaDose = new Date(this.state.value.data.slice()); // Substitua pela data real da última dose
 
@@ -114,9 +82,7 @@ class PrazoVacinas extends PureComponent {
 
   alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
   event.preventDefault();
-  
-  
-
+  }
   }
 
   render() {
