@@ -19,6 +19,8 @@ class PrazoVacinas extends PureComponent {
     this.handleDose = this.handleDose.bind(this);
   }
 
+  //Eventos
+
   handleChangeFaixaEtaria(event) {
     this.setState((x) => x.values.faixa = event.target.value);
   }
@@ -28,61 +30,66 @@ class PrazoVacinas extends PureComponent {
   }
 
   handleDate(event) {
-    this.setState({value: {data: event.target.value}});
+    this.setState((x) => x.values.data = event.target.value);
   }
 
   handleDose(event) {
-    this.setState({value: {dose: event.target.value}});
+    this.setState((x) => x.values.dose = event.target.value);
   }
 
   handleSubmit(event) {
 
-  fetch('vacinas.json')
-  .then(response => {
-    response.json()
-  })
-
-  .then(response => {
-    var titulo = [
-      "Recém-nascido",
-      "Adulto",
-      "Idoso",
-      "Criança",
-      "Adolescente",
-      "Gestante"];
-  
-     var faixaetaria = ["vacinasrn",
-      "vacinascrianca",
-      "vacinasadulto",
-      "vacinasidoso",
-      "vacinasgestante"];
-  
-      var intervaloDose = [
+    const vacinas = fetch('vacinas.json')
+    .then(response => response.json())
+    .then(response => {
+      const titulo = [
+        "Recém-nascido",
+        "Adulto",
+        "Idoso",
+        "Criança",
+        "Adolescente",
+        "Gestante"
+      ];
+    
+      const faixaetaria = [
+        "vacinasrn",
+        "vacinascrianca",
+        "vacinasadulto",
+        "vacinasidoso",
+        "vacinasgestante"
+      ];
+    
+      const intervaloDose = [
       
-      "idaderecom_dose01",
-      "idaderecom_dose02",
-      "idaderecom_dose03"];
+        "idaderecom_dose01",
+        "idaderecom_dose02",
+        "idaderecom_dose03"
+      ];
 
-  }
-  )
+      return { titulo, faixaetaria, intervaloDose, };
+    }
+  );
 
-  var titulo = this.state.value.faixa.slice();
+  console.log("Os titulos da Vacina são: ", vacinas.titulo.join(", "));
 
-  if (titulo = "Recém-nascido") {
-    alert("Dose única ao nascer.");
-    event.preventDefault();
-  }
   
-  else {
-  const intervaloEmDias = 21;
-  const dataUltimaDose = new Date(this.state.value.data.slice()); // Substitua pela data real da última dose
+    const titulo_vac = this.state.faixa.slice();
 
-  const dataProximaDose = new Date(dataUltimaDose);
-  dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
+    if (titulo_vac === "Recém-nascido") {
+      alert("Dose única ao nascer.");
+      event.preventDefault();
+    }
+    
+    else {
+      const intervaloEmDias = 21;
+      const dataUltimaDose = new Date(this.state.value.data.slice()); // Substitua pela data real da última dose
 
-  alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
-  event.preventDefault();
-  }
+      const dataProximaDose = new Date(dataUltimaDose);
+      dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
+
+      alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
+      event.preventDefault();
+    }
   }
 
   render() {
@@ -98,20 +105,23 @@ class PrazoVacinas extends PureComponent {
         <form class="form" onSubmit={this.handleSubmit}>
           <label>
             <select id="faixaet" class="sel-pesquisa pesquisa-faixa-etaria" type="checkbox" value={this.state.faixa} onChange={this.handleChangeFaixaEtaria}>
-                    <option value="" disabled>Selecione a faixa etária:</option>
-                    {
-                dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
-                    )}
-          </select>
+              <option value="" disabled>Selecione a faixa etária:</option>
+                {
+                  dados.categorias.map((v, i) =>
+                  <option key={i}  value={i}> {v.titulo} </option>)
+                  //vacinas.map((titulo) =>
+                  //<option> {titulo} </option>)
+                }
+            </select>
           </label>
 
           <label>
             <select class="sel-pesquisa pesquisa-vacina" type="checkbox" value={this.state.vacina} onChange={this.handleChangeVacina}>
-              <option value="" disabled>Selecione a vacina:</option>
-              
-              {
-                dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
-              )}
+              <option value="" disabled>Selecione a vacina:</option>  
+                {
+                  dadosVAC.map((v, i) =>
+                  <option key={i}  value={i}> {v.vacina} </option>)
+                }
             </select>
           </label>
 
