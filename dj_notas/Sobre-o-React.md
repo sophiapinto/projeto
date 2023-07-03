@@ -1,4 +1,21 @@
-# Sobre o código react
+# Observações importantes
+
+## ✋🏻 Pré-requisitos
+
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/pt-BR/docs/install)
+
+## Sobre o gerenciador de pacotes
+
+- Ao utilizar `yarn` não se pode usar o `npm` para instalar dependências.
+- Utilizar dois gerenciadores de pacote no mesmo projeto pode gerar problemas de compatibilidade de dependências, e causar o problema que eles vieram para resolver -- "Funciona na minha maquina"
+
+Dito isto, utilize apenas o `yarn` como foi citado em ["Pré-requisitos"](#-pré-requisitos), este é o gerenciador de pacotes oficializado neste projeto.
+
+**Para seguir essa boa pratica, é necessário:**
+
+- deletar o arquivo [/package-lock.json](/package-lock.json)
+- Utilizar `yarn add nome-do-pacote-que-deseja-instalar` no lugar de`npm install nome-do-pacote...`### Sobre o código react
 
 Ao executar o servidor, e abrir o console no navegador é possível observar os erros que o projeto apresta naquela página, recomendo acessarem com frequência essa ferramenta e não ignorar os erros apresentados.
 
