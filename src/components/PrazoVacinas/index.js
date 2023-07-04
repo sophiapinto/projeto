@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 
 import dados from "../../vacinas.json";
-import dadosVAC from "../../dados.json";
 
 import logo from "../../assets/images/logo.png";
 

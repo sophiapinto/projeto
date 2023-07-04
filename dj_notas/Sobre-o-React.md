@@ -151,12 +151,12 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 >
 > ```js
 > 49 <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-> 50 <option value="" disabled selected>Selecione a faixa etária:</option>
+> 50 <option value= disabled selected>Selecione a faixa etária:</option>
 > ```
 >
 > ```js
 > 58 <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
-> 59 <option value="" disabled selected>Selecione a vacina:</option>
+> 59 <option value= disabled selected>Selecione a vacina:</option>
 > ```
 >
 > Para sumir com o aleta de erro basta, deletar a tag `selected`, pois:
@@ -170,7 +170,7 @@ Ao executar o servidor, e abrir o console no navegador é possível observar os 
 > - e na linha 13 é definido que value = ''
 >
 > que é exatamente o valor do option que possuía o `selcted`
-> `<option value="" ...`
+> `<option value= ...`
 >
 > logo, value em `<select>` já define este `<option>` como o default
 >

@@ -7,10 +7,12 @@
                     "id": "0",
                     "vacina": "  ",
                     "numerodedoses": 0,
-                    "faixaetaria": "",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "faixaetaria": " ",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Dose única ao nascer."
                 },
                 {
@@ -18,9 +20,11 @@
                     "vacina": "BCG",
                     "numerodedoses": 1,
                     "faixaetaria": "recem-nascido",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Dose única ao nascer."
                 },
                 {
@@ -28,9 +32,11 @@
                     "vacina": "Hepatite B recombinante",
                     "numerodedoses": 1,
                     "faixaetaria": "recem-nascido",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Dose única ao nascer."
                 }
             ]
@@ -43,9 +49,11 @@
                     "vacina": "Poliomielite 1,2,3 (VIP - inativada)",
                     "numerodedoses": 3,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "60",
-                    "idaderecom_dose02": "121",
-                    "idaderecom_dose03": "182",
+                    "doses": [
+                        "60",
+                        "121",
+                        "182"
+                    ],
                     "informacao": "2 reforços com a vacina VOP."
                 },
                 {
@@ -53,9 +61,11 @@
                     "vacina": "Poliomielite 1 e 3 (VOP - atenuada)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "456",
-                    "idaderecom_dose02": "1461",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "456",
+                        "1461",
+                        "0"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -63,9 +73,11 @@
                     "vacina": "Rotavírus humano G1P1 (VRH)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "60",
-                    "idaderecom_dose02": "121",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "60",
+                        "121",
+                        "0"                
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -73,9 +85,11 @@
                     "vacina": "DTP+Hib+HB (Penta)",
                     "numerodedoses": 3,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "60",
-                    "idaderecom_dose02": "121",
-                    "idaderecom_dose03": "182",
+                    "doses":[
+                        "60",
+                        "121",
+                        "182"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -83,9 +97,11 @@
                     "vacina": "Pneumocócica 10-valente (PCV 10)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "60",
-                    "idaderecom_dose02": "121",
-                    "idaderecom_dose03": "365",
+                    "doses": [
+                        "60",
+                        "121",
+                        "365"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -93,9 +109,11 @@
                     "vacina": "Meningocócica C (Conjugada)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "91",
-                    "idaderecom_dose02": "152",
-                    "idaderecom_dose03": "365",
+                    "doses": [
+                        "91",
+                        "152",
+                        "365"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -103,9 +121,11 @@
                     "vacina": "Febre Amarela (Atenuada)",
                     "numerodedoses": 1,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "274",
-                    "idaderecom_dose02": "1461",
-                    "idaderecom_dose03": "0",
+                    "doses":[
+                        "274",
+                        "1461",
+                        "0"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -113,9 +133,11 @@
                     "vacina": "Sarampo, Caxumba e Rubéola (SCR)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "365",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "365",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -123,9 +145,11 @@
                     "vacina": "Sarampo, Caxumba, Rubéola e Varicela (SCRV)",
                     "numerodedoses": 1,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "456",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "456",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -133,9 +157,11 @@
                     "vacina": "Hepatite A (HA)",
                     "numerodedoses": 1,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "456",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "456",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -143,9 +169,11 @@
                     "vacina": "Difteria, Tétano e Pertussis (DTP)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "456",
-                    "idaderecom_dose02": "1461",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "456",
+                        "1461",
+                        "0"
+                    ],
                     "informacao": "0"
                 },
                 {
@@ -153,9 +181,11 @@
                     "vacina": "Difteria e Tétano (dT)",
                     "numerodedoses": 3,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "A partir dos 7 anos, a cada 10 anos. Em caso de ferimentos graves a cada 5 anos."
                 },
                 {
@@ -163,9 +193,11 @@
                     "vacina": "Papilomavírus humano (HPV)",
                     "numerodedoses": 2,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "9 a 14 anos, para meninas; 11 a 14 anos para meninos."
                 },
                 {
@@ -173,9 +205,10 @@
                     "vacina": "Pneumocócica 23-valente (PPV 23)",
                     "numerodedoses": 1,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": ["0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "A partir de 5 anos de idade para os povos indígenas, sem comprovação da vacina PCV 10."
                 },
                 {
@@ -183,9 +216,11 @@
                     "vacina": "Varicela",
                     "numerodedoses": 1,
                     "faixaetaria": "crianca",
-                    "idaderecom_dose01": "1461",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "1461",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "0"
                 }
             ]
@@ -198,9 +233,11 @@
                     "vacina": "Hepatite B recombinante",
                     "numerodedoses": 1,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses":[
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situaçao vacinal."
                 },
                 {
@@ -208,9 +245,11 @@
                     "vacina": "Febre Amarela (Atenuada)",
                     "numerodedoses": 1,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses":[
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade."
                 },
                 {
@@ -218,9 +257,11 @@
                     "vacina": "Sarampo, Caxumba e Rubéola (SCR)",
                     "numerodedoses": 2,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal."
                 },
                 {
@@ -228,9 +269,11 @@
                     "vacina": "Difteria e Tétano (dT)",
                     "numerodedoses": 3,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo\ncom situação vacinal."
                 },
                 {
@@ -238,9 +281,11 @@
                     "vacina": "Papilomavírus humano (HPV)",
                     "numerodedoses": 2,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "9 a 14 anos, para meninas; 11 a 14 anos para meninos."
                 },
                 {
@@ -248,9 +293,11 @@
                     "vacina": "Pneumocócica 23-valente (PPV 23)",
                     "numerodedoses": 1,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses":[
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "A partir de 5 anos de idade para os povos indígenas, sem comprovação da vacina PCV 10."
                 },
                 {
@@ -258,9 +305,11 @@
                     "vacina": "Meningocócica ACWY (Conjugada)",
                     "numerodedoses": 1,
                     "faixaetaria": "adolescente",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "11 e 12 anos."
                 }
             ]
@@ -273,9 +322,11 @@
                     "vacina": "Hepatite B recombinante",
                     "numerodedoses": 1,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situaçao vacinal."
                 },
                 {
@@ -283,9 +334,11 @@
                     "vacina": "Febre Amarela (Atenuada)",
                     "numerodedoses": 1,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situaçao vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade."
                 },
                 {
@@ -293,9 +346,11 @@
                     "vacina": "Sarampo, Caxumba e Rubéola (SCR)",
                     "numerodedoses": 2,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal."
                 },
                 {
@@ -303,9 +358,11 @@
                     "vacina": "Difteria e Tétano (dT)",
                     "numerodedoses": 3,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal."
                 },
                 {
@@ -313,9 +370,11 @@
                     "vacina": "Papilomavírus humano (HPV)",
                     "numerodedoses": 2,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "9 a 14 anos, para meninas; 11 a 14 anos para meninos."
                 },
                 {
@@ -323,9 +382,11 @@
                     "vacina": "Pneumocócica 3-valente (PPV 23)",
                     "numerodedoses": 1,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "A partir de 5 anos de idade para os povos indígenas, sem comprovação da vacina PCV 10."
                 },
                 {
@@ -333,9 +394,11 @@
                     "vacina": "Meningocócica ACWY (Conjugada)",
                     "numerodedoses": 1,
                     "faixaetaria": "adulto",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "11 e 12 anos"
                 }
             ]
@@ -348,9 +411,11 @@
                     "vacina": "Hepatite B recombinante",
                     "numerodedoses": 1,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situaçao vacinal."
                 },
                 {
@@ -358,9 +423,11 @@
                     "vacina": "Febre Amarela (Atenuada)",
                     "numerodedoses": 1,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal. Reforço, caso a pessoa tenha recebido uma dose da vacina antes de completar 5 anos de idade."
                 },
                 {
@@ -368,9 +435,11 @@
                     "vacina": "Sarampo, Caxumba e Rubéola (SCR)",
                     "numerodedoses": 2,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal."
                 },
                 {
@@ -378,9 +447,11 @@
                     "vacina": "Difteria e Tétano (dT)",
                     "numerodedoses": 3,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal."
                 },
                 {
@@ -388,9 +459,11 @@
                     "vacina": "Papilomavírus humano (HPV)",
                     "numerodedoses": 2,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "9 a 14 anos, para meninas; 11 a 14 anos para meninos."
                 },
                 {
@@ -398,9 +471,11 @@
                     "vacina": "Pneumocócica 23-valente (PPV 23)",
                     "numerodedoses": 1,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "A partir de 5 anos de idade para os povos indígenas, sem comprovação da vacina PCV 10."
                 },
                 {
@@ -408,9 +483,11 @@
                     "vacina": "Meningocócica ACWY (Conjugada)",
                     "numerodedoses": 1,
                     "faixaetaria": "idoso",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "11 e 12 anos"
                 }
             ]
@@ -423,9 +500,11 @@
                     "vacina": "Difteria e Tétano (dT)",
                     "numerodedoses": 3,
                     "faixaetaria": "gestante",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com a situação vacinal."
                 },
                 {
@@ -433,9 +512,11 @@
                     "vacina": "Hepatite B recombinante",
                     "numerodedoses": 1,
                     "faixaetaria": "gestante",
-                    "idaderecom_dose01": "0",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "0",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "Iniciar ou completar o esquema, de acordo com situação vacinal."
                 },
                 {
@@ -443,9 +524,11 @@
                     "vacina": "Difteria, Tétano, Pertussis acelular (dTpa adulto)",
                     "numerodedoses": 1,
                     "faixaetaria": "gestante",
-                    "idaderecom_dose01": "140",
-                    "idaderecom_dose02": "0",
-                    "idaderecom_dose03": "0",
+                    "doses": [
+                        "140",
+                        "0",
+                        "0"
+                    ],
                     "informacao": "1 dose para gestante a partir da 20º semana de gravidez, 1 dose a cada gestação."
                 }
             ]
