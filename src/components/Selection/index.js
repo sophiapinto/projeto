@@ -31,45 +31,45 @@ class Selection extends PureComponent {
                     <img src={calendario} alt="Calendario"/>
                </figure>
             </div>
-            <div class="container">
+            <div className="container">
                 <div className="selection-wrapper">
 
-                    <figure class= "select-img grid-item-01">
+                    <figure className= "select-img grid-item-01">
                         <Link to="/VacinaGestante">
                             <img src= {gestante} alt="Gestante" />
                             <span className="text-selection">GESTANTE</span>
                         </Link>
                     </figure>
 
-                    <figure class= "select-img grid-item-02">
+                    <figure className= "select-img grid-item-02">
                         <Link to="/VacinaIdoso">
                             <img src= {idoso} alt="Idoso" />
                             <span className="text-selection">IDOSO</span>
                         </Link>
                     </figure>
 
-                    <figure class= "select-img grid-item-03">
+                    <figure className= "select-img grid-item-03">
                         <Link to="/VacinaAdulto">
                             <img src= {adulto} alt="Adulto" />
                             <span className="text-selection">ADULTO</span>
                         </Link>
                     </figure>
 
-                    <figure class= "select-img grid-item-04">
+                    <figure className= "select-img grid-item-04">
                         <Link to="/VacinaAdolescente">
                             <img src= {adolescente} alt="Adolescente" />
                             <span className="text-selection">ADOLESCENTE</span>
                         </Link>
                     </figure>
 
-                    <figure class= "select-img grid-item-05">
+                    <figure className= "select-img grid-item-05">
                         <Link to="/VacinaCrianca">
                             <img src= {criança} alt="Criança" />
                             <span className="text-selection">CRIANÇA</span>
                         </Link>
                     </figure>
                     
-                    <figure class= "select-img grid-item-06">
+                    <figure className= "select-img grid-item-06">
                         <Link to="/Aprazamento">
                             <img src= {aprazamento} alt="Aprazamento" />
                             <span className="text-selection">APRAZAMENTO</span>
