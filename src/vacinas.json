@@ -18,7 +18,7 @@
                 {
                     "id": "0",
                     "vacina": "BCG",
-                    "numerodedoses": 1,
+                    "numerodedoses": "1",
                     "faixaetaria": "recem-nascido",
                     "doses": [
                         "0",

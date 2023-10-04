@@ -44,34 +44,76 @@ class PrazoVacinas extends PureComponent {
     this.setState((x) => x.values.dose = event.target.value);
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
+  // Cálculo da dose da próxima vacina
 
-    const id_faixa = this.state.values.faixa;
-    const id_vacina = this.state.values.vacina;
+  calcularProximaDose () {
+  
+    const intervaloEmDias = new Array(dados.categorias[this.state.values.faixa].vacinas[this.state.values.vacina].doses.map());
 
-    const catagoria = dados.categorias[id_faixa]
-    // const vacina_atual = catagoria.vacinas.find(
-    //   (vacina) => vacina.vacina === nome_vacina
-    // )
+    const dataUltimaDose = new Date(this.state.values.data.slice()); // Substitua pela data real da última dose
+
+    const dataProximaDose = new Date(dataUltimaDose);
     
-    console.log(catagoria)
-    if (catagoria.titulo === "Recém-nascido") {
-      alert("Dose única ao nascer.");
-    }
+    dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
     
-    // if ()
-    // else {
-    //   const intervaloEmDias = 21;
-    //   const dataUltimaDose = new Date(this.state.value.data.slice()); // Substitua pela data real da última dose
-
-    //   const dataProximaDose = new Date(dataUltimaDose);
-    //   dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
-
-    //   alert('A data da próxima vacina é: ' + dataProximaDose.toLocaleDateString("pt-BR"));
-      
-    // }
+    return dataProximaDose;  
+  
   }
+
+  handleSubmit(event) {
+
+    event.preventDefault();
+  
+    // Obter o elemento select
+
+    var selectElement_faixa = this.state.values.faixa;
+
+    var selectElement_vacina = this.state.values.vacina;
+
+    var selectElement_dose = this.state.values.dose;
+
+
+    // Obter o valor selecionado
+    
+    var valorSelecionado_faixa = selectElement_faixa.value;
+
+    var valorSelecionado_vacina = selectElement_vacina.value;
+
+    var valorSelecionado_dose = selectElement_dose.value;
+
+    var faixaEtaria;
+
+    var nomeVacina;
+
+    var quantDoseTomadas;
+
+    // Confirmar faixa etária
+
+    if (valorSelecionado_faixa = 0) {
+      faixaEtaria = "Recém-nascido";
+    } else if (valorSelecionado_faixa = 1) {
+      faixaEtaria = "Criança";
+    }
+    else if (valorSelecionado_faixa = 2) {
+      faixaEtaria = "Adolescente";
+    } else if (valorSelecionado_faixa = 3) {
+      faixaEtaria = "Adulto";
+    } else if (valorSelecionado_faixa = 4) {
+      faixaEtaria = "Idoso";
+    } else if (valorSelecionado_faixa = 5) {
+      faixaEtaria = "Gestante";
+    }
+  
+  
+    // Confirmar quantidade de doses
+
+  if (faixaEtaria = "Recém-nascido") {
+    alert("Dose única ao nascer!");
+  } else {
+    var quantDoseVacinas = dados.categorias[this.state.values.faixa-1]
+    .vacinas[this.state.values.vacina-1].numerodedoses.map;
+  }
+}
 
   render() {
     return (
@@ -117,7 +159,7 @@ class PrazoVacinas extends PureComponent {
           <label>
             <input type="date" className="sel-pesquisa pesquisa-data" value={this.state.values.data} onChange={this.handleDate} />
           </label>
-          
+
           {(
             this.state.values.vacina &&
             this.state.values.vacina !== "-" &&
@@ -131,9 +173,6 @@ class PrazoVacinas extends PureComponent {
               }
               <select id="quant-dose" className="sel-pesquisa pequisa-dose" value={this.state.values.dose} onChange={this.handleDose}>
                 <option value="" disabled>Selecione a quantidade de dose já tomadas:</option>
-                {/* <option value="1">1 (uma) dose</option> */}
-                {/* <option value="2">2 (duas) doses</option> */}
-                {/* <option value="3">3 (três) doses</option> */}
                 {
                   new Array(dados.categorias[this.state.values.faixa-1]
                     .vacinas[this.state.values.vacina-1].numerodedoses)
@@ -145,6 +184,7 @@ class PrazoVacinas extends PureComponent {
             </label>
           )}
 
+          
           <button className="pesquisa-button" type="submit" value="Enviar">Calcular</button>
         </form>
       </div>
