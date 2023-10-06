@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 
-import dados from "../../vacinas.json";
+import DADOS_VACINAS from "../../vacinas.json";
 
 import logo from "../../assets/images/logo.png";
 
@@ -9,9 +9,12 @@ class PrazoVacinas extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = { values: { 
-      faixa: '', vacina: '', data: '', dose: '',
-    } };
+    this.state = {
+      faixa: "",
+      vacina: "",
+      data: "",
+      dose: "",
+    };
 
     this.forms_inputs = {}
 
@@ -25,102 +28,134 @@ class PrazoVacinas extends PureComponent {
   //Eventos
 
   handleChangeFaixaEtaria(event) {
-    this.setState((x) => x.values = {
-      faixa:event.target.value,
-      vacina: '', data: '', dose: ''
+
+    console.log("Mudando Faixa para:", event.target.value)
+    this.setState({
+      faixa: event.target.value,
+      vacina: "",
+      data: "",
+      dose: "",
     })
+
+    console.log("this.state", this.state)
     // this.setState((x) => x.values.vacina = undefined);
   }
 
   handleChangeVacina(event) {
-    this.setState((x) => x.values.vacina = event.target.value);
+    console.log("Mudando Vacina para:", event.target.value)
+    this.setState({ vacina: event.target.value });
+    console.log("this.state", this.state)
   }
 
   handleDate(event) {
-    this.setState((x) => x.values.data = event.target.value);
+    console.log("Mudando Date para:", event.target.value)
+    this.setState({ data: event.target.value });
+    console.log("this.state", this.state)
   }
 
   handleDose(event) {
-    this.setState((x) => x.values.dose = event.target.value);
+    console.log("Mudando Dose para:", event.target.value)
+    this.setState({ dose: event.target.value });
+    console.log("this.state", this.state)
   }
 
   // Cálculo da dose da próxima vacina
 
-  calcularProximaDose () {
-  
-    const intervaloEmDias = new Array(dados.categorias[this.state.values.faixa].vacinas[this.state.values.vacina].doses.map());
+  // calcularProximaDose() {
 
-    const dataUltimaDose = new Date(this.state.values.data.slice()); // Substitua pela data real da última dose
+  //   const id_faixa = this.state.faixa
+  //   const id_vacina = this.state.vacina
 
-    const dataProximaDose = new Date(dataUltimaDose);
-    
-    dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
-    
-    return dataProximaDose;  
-  
-  }
+  //   const FAIXA = DADOS_VACINAS.categorias.filter(x=>x.id===id_faixa);
+  //   const VACINA = FAIXA.vacinas.filter(x=>x.id===id_vacina);
+
+  //   const intervaloEmDias = VACINA.doses;
+
+  //   // const intervaloEmDias = vacina.numerodedoses===1? : VACINA.doses.map();
+
+  //   const dataUltimaDose = this.state.data.slice(); // Substitua pela data real da última dose
+
+  //   const dataProximaDose = new Date(dataUltimaDose);
+
+  //   dataProximaDose.setDate(dataProximaDose.getDate() + intervaloEmDias);
+
+  //   return dataProximaDose;
+
+  // }
 
   handleSubmit(event) {
 
     event.preventDefault();
-  
-    // Obter o elemento select
 
-    var selectElement_faixa = this.state.values.faixa;
+    // // Obter o valor selecionado
 
-    var selectElement_vacina = this.state.values.vacina;
+    const {
+      faixa,
+      vacina,
+      data,
+      dose
+    } = this.state;
 
-    var selectElement_dose = this.state.values.dose;
+
+    const FAIXA = DADOS_VACINAS.categorias[faixa]
+    const VACINA = FAIXA.vacinas[vacina]
 
 
-    // Obter o valor selecionado
-    
-    var valorSelecionado_faixa = selectElement_faixa.value;
+    if (FAIXA.titulo === "Recém-nascido") {
 
-    var valorSelecionado_vacina = selectElement_vacina.value;
+      alert(`Dose única ao nascer. \n\n${VACINA.informacao}`);
 
-    var valorSelecionado_dose = selectElement_dose.value;
+    } else if (vacina.numerodedoses === 1) {
 
-    var faixaEtaria;
+      alert(`Dose única. \n\n${VACINA.informacao}`);
 
-    var nomeVacina;
+    } else if (dose >= VACINA.numerodedoses) {
 
-    var quantDoseTomadas;
+      alert(`Todas as doses obrigatórias já foram tomadas, mas dependendo do caso pode ser necessário doses de reforço\n\n${VACINA.informacao}`);
 
-    // Confirmar faixa etária
+    } else if (VACINA.doses.length < dose) {
 
-    if (valorSelecionado_faixa = 0) {
-      faixaEtaria = "Recém-nascido";
-    } else if (valorSelecionado_faixa = 1) {
-      faixaEtaria = "Criança";
+      console.error("ERRO!!! O banco de dados ainda não possui os prazos cadastrados para essa vacina")
+      alert(`erro no banco de dados\n\n${VACINA.informacao}`);
+
+    } else if (dose === "0") {
+      // COLOCAR INFORMAÇÂO DA PRIMEIRA DOSE
+      alert(`${VACINA.informacao}`);
+
+    } else {
+
+      if (VACINA.doses.length >= dose) {
+
+        const dataUltimaDose = new Date(data)
+
+        const dataProximaDose = new Date();
+
+        const intervaloEmDias = VACINA.doses[dose-1] || VACINA.doses[0]
+
+        dataProximaDose.setDate(dataUltimaDose.getDate() + Number(intervaloEmDias));
+
+        alert(`A proxima dose deve ser tomada em ${intervaloEmDias} dias, ou seja, dia ${dataProximaDose.toLocaleDateString()}`)
+      } else {
+        console.error("ERRO, A quantidade de doses cadastradas é inferior a quantidade de doses esperada")
+      }
     }
-    else if (valorSelecionado_faixa = 2) {
-      faixaEtaria = "Adolescente";
-    } else if (valorSelecionado_faixa = 3) {
-      faixaEtaria = "Adulto";
-    } else if (valorSelecionado_faixa = 4) {
-      faixaEtaria = "Idoso";
-    } else if (valorSelecionado_faixa = 5) {
-      faixaEtaria = "Gestante";
-    }
-  
-  
-    // Confirmar quantidade de doses
 
-  if (faixaEtaria = "Recém-nascido") {
-    alert("Dose única ao nascer!");
-  } else {
-    var quantDoseVacinas = dados.categorias[this.state.values.faixa-1]
-    .vacinas[this.state.values.vacina-1].numerodedoses.map;
   }
-}
 
   render() {
     return (
       <div>
-        {/* <pre>
-          <code>{JSON.stringify(this.state.values)}</code>
-        </pre> */}
+        <pre>
+          <code>{JSON.stringify(this.state, null, 4)}</code>
+        </pre>
+        {/* <pre> */}
+        {/* {(this.state.faixa && this.state.faixa !== "") && <code>{JSON.stringify(DADOS_VACINAS.categorias[this.state.faixa], null, 4)}</code>} */}
+        {/* </pre> */}
+        <pre>
+          {(this.state.vacina && this.state.vacina !== "") && <code>{JSON.stringify(DADOS_VACINAS.categorias[this.state.faixa].vacinas[this.state.vacina], null, 4)}</code>}
+        </pre>
+
+
         <div className="logo">
           <figure className="logo-vac">
             <img src={logo} alt="Senhora Vacina" />
@@ -130,65 +165,73 @@ class PrazoVacinas extends PureComponent {
 
         <form className="form" onSubmit={this.handleSubmit}>
           <label>
-            <select id="faixaet" className="sel-pesquisa pesquisa-faixa-etaria" value={this.state.values.faixa} onChange={this.handleChangeFaixaEtaria}>
-              <option value="" disabled>Selecione a faixa etária:</option>
+            <select id="faixaet" className="sel-pesquisa pesquisa-faixa-etaria" value={this.state.faixa} onChange={this.handleChangeFaixaEtaria}>
+              <option value="" disabled> Selecione a faixa etária: </option>
               {
-                dados.categorias.map((v, i) =>
-                  <option key={`faixaet ${i}`} value={i+1}> {v.titulo} </option>)
-                //vacinas.map((titulo) =>
-                //<option> {titulo} </option>)
+                DADOS_VACINAS.categorias.map(
+                  (VACINA, i) => <option key={`faixaet_${i}`} value={i}> {VACINA.titulo} </option>
+                )
               }
             </select>
           </label>
-          
-          {/* {console.log("values:",this.state.values)} */}
-          {(this.state.values.faixa && this.state.values.faixa !=="-") && (
+          {(this.state.faixa && this.state.faixa !== "") && (
             <label>
-              <select id="inputvacina" className="sel-pesquisa pesquisa-vacina" value={this.state.values.vacina} onChange={this.handleChangeVacina}>
+              <select id="inputvacina" className="sel-pesquisa pesquisa-vacina" value={this.state.vacina} onChange={this.handleChangeVacina}>
                 <option value="" disabled>Selecione a vacina:</option>
                 {
-                  dados.categorias[this.state.values.faixa-1].vacinas.map((v, i) =>
-                    <option key={`vacina ${i}`}  value={i+1}> {v.vacina} </option>
-                )
-                }
-              </select>
-              {/* {console.log("vacinas", dados.categorias[this.state.values.faixa-1].vacinas)} */}
-            </label>
-          )}
-
-          <label>
-            <input type="date" className="sel-pesquisa pesquisa-data" value={this.state.values.data} onChange={this.handleDate} />
-          </label>
-
-          {(
-            this.state.values.vacina &&
-            this.state.values.vacina !== "-" &&
-            (dados.categorias[this.state.values.faixa-1]
-              .vacinas[this.state.values.vacina-1].numerodedoses > 1)
-            ) && (
-            <label>
-              {
-                console.log("n_doses: ", dados.categorias[this.state.values.faixa-1]
-                  .vacinas[this.state.values.vacina-1].numerodedoses)
-              }
-              <select id="quant-dose" className="sel-pesquisa pequisa-dose" value={this.state.values.dose} onChange={this.handleDose}>
-                <option value="" disabled>Selecione a quantidade de dose já tomadas:</option>
-                {
-                  new Array(dados.categorias[this.state.values.faixa-1]
-                    .vacinas[this.state.values.vacina-1].numerodedoses)
-                    .map(
-                      (_, i) => (<option key={`dose ${i}`} value={i+1}> {`${i} doses`} </option>)
-                    )
+                  DADOS_VACINAS.categorias[this.state.faixa].vacinas.map((v, i) =>
+                    <option key={`vacina ${i}`} value={`${i}`}> {v.vacina} </option>
+                  )
                 }
               </select>
             </label>
           )}
 
-          
+          {
+            (this.state.faixa && this.state.faixa !== "") &&
+              (this.state.vacina && this.state.vacina !== "")
+              && (
+                Number(DADOS_VACINAS.categorias[this.state.faixa].vacinas[this.state.vacina].numerodedoses) > 1
+              )
+              ? (
+                <>
+                  {console.log("vacina", DADOS_VACINAS.categorias[this.state.faixa].vacinas[this.state.vacina])}
+
+                  {this.state.dose && this.state.dose!=="0" &&(<label>
+                    <input type="date" className="sel-pesquisa pesquisa-data" value={this.state.data} onChange={this.handleDate} />
+                  </label>)}
+
+                  <label>
+                    {
+                      console.log("n_doses: ", DADOS_VACINAS.categorias[this.state.faixa]
+                        .vacinas[this.state.vacina].numerodedoses)
+                    }
+                    <select id="quant-dose" className="sel-pesquisa pequisa-dose" value={this.state.dose} onChange={this.handleDose}>
+                      <option value="" disabled>Selecione a quantidade de dose já tomadas:</option>
+                      {
+                        [...Array(DADOS_VACINAS.categorias[this.state.faixa].vacinas[this.state.vacina].numerodedoses + 1)]
+                          .map((_, i) => <option key={`dose ${i}`} value={i}> {`${i} doses`} </option>)
+                      }
+                    </select>
+                  </label>
+                </>
+              )
+              : (this.state.faixa && this.state.faixa !== "") &&
+              (this.state.vacina && this.state.vacina !== "")
+              && (
+                <div>
+                  <div id="quant-dose" className="sel-pesquisa pequisa-dose" value={this.state.dose} onChange={this.handleDose}>
+                    <span >Dose única</span>
+                  </div>
+                </div>
+              )
+          }
+
+
           <button className="pesquisa-button" type="submit" value="Enviar">Calcular</button>
         </form>
       </div>
-      
+
     );
   }
 }
