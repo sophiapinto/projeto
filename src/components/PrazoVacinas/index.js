@@ -145,15 +145,15 @@ class PrazoVacinas extends PureComponent {
   render() {
     return (
       <div>
-        <pre>
+        {/* <pre>
           <code>{JSON.stringify(this.state, null, 4)}</code>
-        </pre>
+        </pre> */}
         {/* <pre> */}
         {/* {(this.state.faixa && this.state.faixa !== "") && <code>{JSON.stringify(DADOS_VACINAS.categorias[this.state.faixa], null, 4)}</code>} */}
         {/* </pre> */}
-        <pre>
+        {/* <pre>
           {(this.state.vacina && this.state.vacina !== "") && <code>{JSON.stringify(DADOS_VACINAS.categorias[this.state.faixa].vacinas[this.state.vacina], null, 4)}</code>}
-        </pre>
+        </pre> */}
 
 
         <div className="logo">
