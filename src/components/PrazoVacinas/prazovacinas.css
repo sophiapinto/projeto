@@ -206,3 +206,19 @@ form{
     
     color: #000000;
 }
+
+.historico-button {
+
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #74B3B5;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}

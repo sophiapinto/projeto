@@ -2,6 +2,8 @@ import React, { PureComponent } from "react";
 
 import DADOS_VACINAS from "../../vacinas.json";
 
+//import Historico from './../Historico';
+
 import logo from "../../assets/images/logo.png";
 
 import './prazovacinas.css';
@@ -14,6 +16,9 @@ class PrazoVacinas extends PureComponent {
       vacina: "",
       data: "",
       dose: "",
+      history: [],  // Adicionando o histórico ao estado inicial
+      showHistorico: false, // Adicione um estado para controlar a visibilidade do histórico
+
     };
 
     this.forms_inputs = {}
@@ -27,6 +32,7 @@ class PrazoVacinas extends PureComponent {
 
   //Eventos
 
+  /*
   handleChangeFaixaEtaria(event) {
 
     console.log("Mudando Faixa para:", event.target.value)
@@ -40,24 +46,82 @@ class PrazoVacinas extends PureComponent {
     console.log("this.state", this.state)
     // this.setState((x) => x.values.vacina = undefined);
   }
+  */
 
+  toggleHistorico() {
+    this.setState(prevState => ({ showHistorico:!prevState.showHistorico }));
+  }
+
+  handleChangeFaixaEtaria(event) {
+    console.log("Mudando Faixa para:", event.target.value);
+    this.setState({
+      faixa: event.target.value,
+      vacina: "",
+      data: "",
+      dose: ""
+    }, () => {
+      this.updateHistory('faixa', event.target.value); // Atualiza o histórico
+    });
+  
+    console.log("this.state", this.state);
+  }
+  
+/*
   handleChangeVacina(event) {
     console.log("Mudando Vacina para:", event.target.value)
     this.setState({ vacina: event.target.value });
     console.log("this.state", this.state)
   }
+*/
 
+handleChangeVacina(event) {
+  this.setState({ vacina: event.target.value }, () => {
+    this.updateHistory('vacina', event.target.value);
+  });
+}
+
+  /*
   handleDate(event) {
     console.log("Mudando Date para:", event.target.value)
     this.setState({ data: event.target.value });
     console.log("this.state", this.state)
   }
 
+  handleDate(event) {
+    console.log("Mudando Data para:", event.target.value);
+    this.setState({ data: event.target.value }, () => {
+      this.updateHistory('data', event.target.value); // Atualiza o histórico
+    });
+    console.log("this.state", this.state);
+  }
+*/
+
+handleDate(event) {
+  this.setState({ data: event.target.value }, () => {
+    this.updateHistory('data', event.target.value);
+  });
+}
+/*
   handleDose(event) {
     console.log("Mudando Dose para:", event.target.value)
     this.setState({ dose: event.target.value });
     console.log("this.state", this.state)
   }
+
+handleDose(event) {
+  console.log("Mudando Dose para:", event.target.value);
+  this.setState({ dose: event.target.value }, () => {
+    this.updateHistory('dose', event.target.value); // Atualiza o histórico
+  });
+  console.log("this.state", this.state);
+}
+*/
+
+handleDose(event) {
+  this.setState({ dose: event.target.value }, () => {
+    this.updateHistory('dose', event.target.value);
+  });
+}
 
   // Cálculo da dose da próxima vacina
 
@@ -142,9 +206,21 @@ class PrazoVacinas extends PureComponent {
 
   }
 
+    // Método para atualizar o histórico
+    updateHistory(action, newValue) {
+      const currentHistory = [...this.state.history];
+      currentHistory.push({
+        action,
+        newValue
+      });
+      this.setState({ history: currentHistory }); // Atualiza o estado com o novo histórico
+    }
+  
+  
   render() {
     return (
-      <div>
+
+<div>
         {/* <pre>
           <code>{JSON.stringify(this.state, null, 4)}</code>
         </pre> */}
@@ -154,7 +230,18 @@ class PrazoVacinas extends PureComponent {
         {/* <pre>
           {(this.state.vacina && this.state.vacina !== "") && <code>{JSON.stringify(DADOS_VACINAS.categorias[this.state.faixa].vacinas[this.state.vacina], null, 4)}</code>}
         </pre> */}
+        {/* Restante do JSX... */}
 
+
+        
+        {/*
+
+        Botão de histórico, manter oculto até concluir formatação de vizualização de histórico
+        <button className= "historico-button" onClick={() => this.setState({ showHistorico:!this.state.showHistorico })}>
+          {this.state.showHistorico? "Fechar Histórico" : "Abrir Histórico"}
+        </button>
+        {this.state.showHistorico && <Historico historico={this.state.history} />}
+       */}
 
         <div className="logo">
           <figure className="logo-vac">
@@ -230,6 +317,7 @@ class PrazoVacinas extends PureComponent {
 
           <button className="pesquisa-button" type="submit" value="Enviar">Calcular</button>
         </form>
+
       </div>
 
     );
